@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script type="text/javascript" src="../lib/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../lib/js/vue.js"></script>
+	<style type="text/css">
+		.height_with {
+			width: 500px;
+			height: 200px;
+		}
+		.img{
+			width: 100px;
+			height: 40px;
+		}
+		.img img{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+
+	<body>
+		<div class="height_with">
+		<div class="img">
+			<img src=""/>
+		</div>
+			<input type="file" multiple="multiple" />
+		</div>
+
+	</body>
+
+</html>
+<script type="text/javascript">
+	//HTP 顽兔图片上传 2016年4月19日 15:52:31
+	upIDcard: function(e) {
+		//声明
+		var uploader = uploadJSSDK;
+		var files = e.target.files;
+		//请求token
+		var ntoken
+		for (var i = 0; i < files.length; i++) {
+			$.ajax({
+				type: "post",
+				url: "findToken.action",
+				async: false,
+				data: '',
+				success: function(data) {
+					$("#token").val(data)
+					console.log(data);
+					ntoken = data
+				},
+			});
+			//上传
+			uploader({
+				file: files[i], //文件，必填,html5 file类型，不需要读数据流，
+				name: files[i].name, //文件名称，选填，默认为文件名称
+				token: ntoken, //token，必填
+				dir: '/商家注册信息/' + '110', //目录，选填，默认根目录''
+				retries: 0, //重试次数，选填，默认0不重试
+				maxSize: 9999999, //上传大小限制，选填，默认0没有限制
+				callback: function(percent, result) {
+					//percent（上传百分比）：-1失败；0-100上传的百分比；100即完成上传
+					//result(服务端返回的responseText，json格式)
+					console.log(result)
+					console.log(result.url)
+					$(e.target).closest(".sczp-main").children('img').attr("src", result.url)
+				}
+			});
+		}
+	};
+</script>

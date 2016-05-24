@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>切分参数</title>
+	</head>
+	<body>
+		<div class="qiege"></div>
+	</body>
+</html>
+<script type="text/javascript">
+	var a = "abcd?ef&d$1234,5&678?ABCD&SA&AASA"
+	var b = a.split("?")[2].split("&")[0];
+	console.log(b)
+</script>
