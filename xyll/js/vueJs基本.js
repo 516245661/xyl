@@ -1,5 +1,5 @@
-var = new Vue({
-	el: '',
+var eg = new Vue({
+	el: '#eg',
 	data: {
 		dataInfo:{},
 	},
@@ -9,12 +9,14 @@ var = new Vue({
 	ready: function() {},
 	methods: {
 		findAccountIfon: function() {
-			var url = '';
+			var url = 'eg';
 			var self = this;
 			var params = {};
-			params.accountPwd = ;
+			params:{
+				eg : 1 ;
+			}
 			$HQ.load(url, params, function(data) {
-				self.$set("",data)
+				self.$set("egInfo",data)
 			});
 		},
 	}
