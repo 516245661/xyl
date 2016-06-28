@@ -1,0 +1,47 @@
+.active{
+	margin: 0 0 2em 0;
+}
+.active span form input.radio{
+	width: 13px; height: 13px; margin: 0 0 0 1em;
+}
+
+
+.shop{
+	width: 185px; border: 1px solid #dcdcdc; padding: 5px 5px 5px 5px; margin: 0 0.43em 35px 0.43em; float: left;
+}
+.shop:hover{
+	border: 1px solid #009f67;
+}
+.shop .up{
+	border-bottom: 1px solid #dfdfdf; text-align: center; overflow: hidden;
+}
+.shop .up h3{
+	position:relative;top: -2em; background: black; opacity: 0.7; color: white; font-size: 14px; height: 28px; 
+	line-height: 28px;
+}
+.shop .up p{
+	font-size: 12px; color: #878787; text-align: left; margin: 5px 0 0.5em 0; float: left;
+}
+.shop .up p strong{
+	color: #009F5F; font-weight: 300;
+}
+.shop .up p.address{
+	float: right;
+}
+.shop .up b{
+	width: 60px; height: 22px; background: #009f5f; text-align: center; line-height: 22px; border-radius: 2px;
+	font-size: 12px; color: white; display: block; margin: -1.4em 0.8em 0.8em 4.5em;
+}
+
+.shop .down{
+	overflow: hidden; background: #efeff1; height: 34px; padding: 0 0.5em 0 0.5em;
+}
+.shop .down h3{
+	font-size: 12px; color: black; margin: 0.8em 0 0.8em 0;
+}
+.shop .down b{
+	height: 34px; line-height: 34px; border-radius: 2px; font-size: 12px; color: black; float: left;
+}
+.shop .down p{
+	height: 34px;line-height: 34px; font-size: 12px; color: black; float: right;
+}

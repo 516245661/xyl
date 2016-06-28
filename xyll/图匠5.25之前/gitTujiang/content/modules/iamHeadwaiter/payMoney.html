@@ -1,0 +1,30 @@
+<link href="css/payMoney.css" rel="stylesheet" media="screen">
+
+<body>
+	<div id="iconSe">
+		<div class="iconSe">
+			<img src="img/payMoney.png" />
+			<p>订单号:{{findAccIfon.demandNum}} <b>已成功建单</b></p>
+		</div>
+		<div class="payMoney">
+			<p class="yingfu">应付金额: <b>{{findAccIfon.totalPrice}}元</b></p>
+			<p class="way">支付方式: <b data-yy='0' class="active">快捷支付</b><b data-yy='1'>银联支付</b></p>
+			<div class="joyful">
+				<span data-payMethon="支付宝" class="active"><img src="img/zhifubao.png"/></span>
+				<span data-payMethon="微信支付"><img src="img/weix.png"/></span>
+				<span data-payMethon="余额支付"><img src="img/yuezhifu.png"/></span>
+				<p><b v-on:click="surePay">确认支付</b></p>
+			</div>
+			<div class="silver">
+				<span data-payMethon="中国银行" class="active"><img src="img/zhongguoyinhang.png"/></span>
+				<span data-payMethon="招商银行"><img src="img/zhaoshang.png"/></span>
+				<span data-payMethon="农业银行"><img src="img/nongye.png"/></span>
+				<span data-payMethon="建设银行"><img src="img/jianshe.png"/></span>
+				<span data-payMethon="交通银行"><img src="img/jiaotong.png"/></span>
+				<span data-payMethon="工商银行"><img src="img/gongshang.png"/></span>
+				<p><b v-on:click="surePay">确认支付</b></p>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/payMoney.js" type="text/javascript"></script>

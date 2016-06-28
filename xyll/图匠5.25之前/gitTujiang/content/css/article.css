@@ -1,0 +1,182 @@
+.article {}
+
+.article h1 {
+	text-align: center;
+	font-size: 24px;
+	color: #848484;
+	margin: 3em 0 0 0;
+	font-weight: 400;
+}
+
+.article li.title {
+	overflow: hidden;
+	color: #848484;
+	font-size: 12px;
+	margin: 2em 0 0 29%;
+}
+
+.article li.title p {
+	float: left;
+	margin: 0 2em 0 0;
+}
+
+.article li.title b {
+	float: left;
+}
+
+.article li.title a {
+	width: 17px;
+	height: 17px;
+	display: block;
+	background: url(../img/icon3.png) no-repeat;
+	float: left;
+	background-position-y: -0.7em;
+	margin: 0 10px 0 0;
+}
+
+.article li.title a.icon1 {
+	background-position-x: 2%;
+}
+
+.article li.title a.icon2 {
+	background-position-x: -39px;
+}
+
+.article li.title a.icon3 {
+	background-position-x: -61px;
+}
+
+.article li.title a.icon4 {
+	background-position-x: -82px;
+}
+
+.article li.title a.icon5 {
+	background-position-x: -103px;
+}
+
+.article li.title a.icon6 {
+	background-position-x: -125px;
+}
+
+.introduction {
+	overflow: hidden;
+	padding: 2% 5% 2% 3%;
+	background: #f6f6f8;
+	margin: 2% 3%;
+	border-top: dotted 1px #dcdcde;
+	border-bottom: dotted 1px #dcdcde;
+}
+
+.introduction li {
+	float: left;
+	font-size: 16px;
+	color: #3b3b3d;
+	margin: 1.5em 0 0 1.5em;
+}
+
+.introduction span {
+	float: right;
+	font-size: 12px;
+	color: #a7a7a9;
+	width: 690px;
+	line-height: 24px; font-family: "黑体";
+}
+
+.paragraph span {
+	line-height: 32px;
+	color: #323232;
+	margin: 5% 3% 0 3%;
+	display: block;
+	text-indent: 2.5em; font-family: "黑体";
+}
+
+.paragraph span.first {
+	margin: 7% 3% 0 3%;
+}
+
+.deAndSu {
+	overflow: hidden;
+	padding: 4em 0 0 13em;
+	border-bottom: double 1px #e3e3e3;
+	margin: 0 2em 0 0;
+}
+
+.deAndSu li {
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 3em;
+	color: #353535;
+}
+
+.deAndSu a {
+	color: white;
+	width: 157px;
+	height: 52px;
+	background: #01a161;
+	text-align: center;
+	line-height: 52px;
+	border-radius: 5px;
+	display: block;
+}
+
+.preNext {
+	overflow: hidden;
+	margin: 2em 0 2em 0;
+}
+
+.preNext li {
+	color: #3e3e3e;
+	font-size: 11px;
+}
+
+.preNext li:first-child {
+	float: left;
+	margin: 0 0 0 2em;
+}
+
+.preNext li:last-child {
+	float: right;
+	margin: 0 5em 0 0;
+}
+
+.preNext a {
+	color: #3e3e3e;
+}
+
+#relaArti {
+	background: #efefef;
+	padding: 2em 0 0 0;
+}
+
+.relaArti {
+	width: 1200px;
+	margin: 0 auto;
+	background: white;
+	padding: 1px 0 2em 0;
+	overflow: hidden;
+}
+
+.relaArti p {
+	color: #00a366;
+	font-size: 16px;
+	margin: 2em 0 1em 3em;
+}
+
+.relaArti ul {
+	overflow: hidden;
+	font-size: 13px;
+	margin: 1em 0 0 3.6em;
+	float: left;
+}
+
+.relaArti ul.right {
+	margin: 1em 0 0 27.6em;
+}
+
+.relaArti ul li {
+	float: left;
+}
+
+.relaArti ul li:last-child {
+	margin: 0 0 0 10em;
+}

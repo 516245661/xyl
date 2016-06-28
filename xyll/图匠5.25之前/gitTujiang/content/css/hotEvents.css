@@ -1,0 +1,70 @@
+/*左边内容*/
+#hotEvents{
+	background: #efefef; padding: 25px 0 0 0;
+}
+.hotEvents{
+	width: 1200px; margin: 0 auto; overflow: hidden; background: #efefef;
+}
+.leftMain{
+	width: 70%; padding: 33px 3% 73px 3%; float: left; background: white; 
+}
+.active{
+	
+}
+.active li{
+	width: 155px; height: 53px;  text-align: center; line-height: 53px; float: left; background: #efefef; color: black;
+	font-size: 14px; border-radius:3px 3px 0 0; margin: 0 5px 0 0; 
+}
+.active .goAhead{
+	background: #01a161; color: white;
+}
+.endActive{
+	
+}
+.active p{
+	float: right; font-size: 12px; line-height: 50px;
+}
+.active span{
+	font-size: 12px; color: black; display: block;clear: both; background: #f0f0f0; line-height: 50px; 
+	border-bottom: 1px solid #dcdcdc; border-top: #00a168 1px solid; text-indent: 2em;
+}
+.active span b{
+	color: #19b07b;
+}
+.actMain{
+	padding: 40px 0 49px 0; border-bottom: dotted 1px #d5d5d5;
+}
+.actMain h2 a{
+	display: inline-block;
+}
+.actMain li,.actMain p{
+	color: #898989; font-size: 12px; line-height: 24px;
+}
+.actMain li{
+	float: left;
+}
+.actMain p{
+	float: right; margin: 0 0 0 24px;
+}
+.actMain b{
+	color: #4ac197;
+}
+.actMain a{
+	display: block;
+}
+.actMain a img{
+	width: 844px; margin: 0.7em 0 0 0;
+}
+/*右边内容*/
+.rightReco{
+	width: 242px; padding: 44px 19px 32px 19px; background: white; float: right;
+}
+.rightReco ul{
+	font-size: 16px; font-weight: bold;
+}
+.rightReco ul li{
+	text-align: center; font-size: 14px; font-weight: normal;
+}
+.rightReco ul img{
+	margin: 36px 0 23px 0;
+}

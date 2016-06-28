@@ -1,0 +1,91 @@
+<link href="css/publicStl.css" rel="stylesheet" media="screen">
+<link href="css/hotEvents.css" rel="stylesheet" media="screen">
+<link href="css/ongoingTask.css" rel="stylesheet" media="screen">
+<link href="css/robSucceed.css" rel="stylesheet" media="screen">
+<script src="js/rightSideBl.js" type="text/javascript"></script>
+
+<body>
+	<div id="hotEvents">
+		<div class="hotEvents">
+			<!--左边内容区域-->
+			<div class="leftMain">
+
+				<ul class="employer">
+					<img v-bind:src="messageOne.headImg" />
+					<span id="">
+						<h3>{{messageOne.nickName}}</h3>
+						<b class="trusShip">托管</b>
+						<b class="money">￥2888.00</b>
+						<p>需求编号：7111627</p>
+					</span>
+				</ul>
+				<ul class="concreteIssue">
+					<h4>具体要求：</h4>
+					
+					<span id="">
+						{{messageEmp.demandDesc}}						
+					</span>
+				</ul>
+				<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+					<div class="modal-dialog modal-sm">
+					    <div style="padding: 20px 10px 10px;" class="modal-content">
+					    	<p style="line-height: 45px; display: block;">请填写返工的理由</p>
+					    	<textarea style="width: 280px; height: 100px;" name="" rows="" cols=""></textarea>
+						    <button class="btn btn-default" v-on:click="upId" data-dismiss="modal">提交</button>
+						    <button class="btn btn-default" data-dismiss="modal">取消</button>
+					    </div>
+					</div>
+				</div>
+				<ul class="not">
+					<b class="active">成品下载</b>
+					<b data-toggle="modal" data-target=".bs-example-modal-sm">返工</b>
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+var assignSendList = new Vue({
+	el: '#hotEvents',
+	data: {
+		messageAlls: {}, //存数据		
+		messageOne: {},
+		messageEmp: {},
+		lll:0,
+	},
+	created: function() { //创建功能 开始就进行的方法
+		this.findThisDes();
+		this.findThisEmp();
+	},
+	methods: {
+		//查询表comclassify里的信息	
+		findThisDes: function() {
+			var jLocal = $HQ.getUrlParams();
+			var url = "uService/findServiceByCondition";
+			var params = {};
+			var self = this;
+//			params.serviceId=jLocal.serviceid;
+//			params.serviceId=1;
+			
+			$HQ.load(url, params, function(data) {
+				console.log(data);				
+				self.$set("messageOne", data.responseMsg[0]);					
+			})
+		},
+		findThisEmp: function() {
+			var jLocal = $HQ.getUrlParams();
+			var url = "uDemand/findDemandById";
+			var params = {};
+			var self = this;
+			console.log(jLocal.employerid);
+//			params.demandId=1;
+			
+			$HQ.load(url, params, function(data) {
+				console.log(data);				
+				self.$set("messageEmp", data.responseMsg[0]);					
+			})
+		},
+	}
+});		
+</script>

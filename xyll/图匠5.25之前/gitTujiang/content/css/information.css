@@ -1,0 +1,156 @@
+
+#information {
+	background: #efefef;
+	padding-top: 25px;
+}
+
+.information {
+	margin: 0 auto;
+	width: 1200px;
+	overflow: hidden;
+	background: white;
+}
+
+
+/*左边导航*/
+
+.leftNav {
+	width: 215px;
+	background: white;
+	float: left;
+}
+
+.leftNav .info {
+	height: 60px;
+	background: #01a161;
+	color: white;
+	line-height: 60px;
+	text-align: center;
+}
+
+.leftNav .title1 {
+	color: #00a367;
+	font-size: 14px;
+	margin: 18% 0 0 14%;
+}
+
+.leftNav .title1 img,
+.leftNav .title img {
+	margin: 2% 4% 0 0;
+}
+
+.leftNav .title {
+	margin: 11% 0 0 14%;
+	color: #00a367;
+	font-size: 14px;
+}
+
+.leftNav a{
+	cursor: pointer;
+}
+
+.leftNav .title li,
+.leftNav .title1 li {
+	color: #626061;
+	font-size: 12px;
+	margin: 6% 0 0 0;
+	display: none;
+}
+
+
+/*右边内容*/
+
+.rightMain {
+	width: 985px;
+	float: right;
+	background: white;
+}
+
+.head {
+	overflow: hidden;
+	height: 60px;
+	line-height: 60px;
+	margin: 0 3% 0 3%;
+	border-bottom: 1px dotted #e2e2e2;
+}
+
+.head li {}
+
+.head li:first-child {
+	float: left;
+	color: #00a265;
+	font-size: 16px;
+}
+
+.head li:last-child {
+	float: right;
+	font-size: 12px;
+	color: #8d8d8d;
+}
+
+.head li:last-child p,
+.head li:last-child a {
+	float: left;
+	color: #8d8d8d
+}
+
+.rightMain ul.main {
+	overflow: hidden;
+	margin: 0 3% 0 3%;
+	border-bottom: dotted 1px #e2e2e2;
+	padding: 2% 0 2% 0;
+}
+
+.rightMain ul.main:hover {
+	background: #f6f6f8;
+}
+
+.rightMain ul.main .mainBox {
+	float: left;
+	width: 806px;
+	padding: 0 2.5em 0 0.4em;
+	border-right: 1px solid #e4e5e7;
+}
+.rightMain ul.main .mainBox a{
+	display: inline-block;
+}
+.rightMain ul.main .mainBox b,
+.rightMain ul.main .mainBox span {
+	display: block;
+}
+
+.rightMain ul.main .mainBox b {
+	font-size: 14px;
+	color: #3a3a3a;
+}
+
+.rightMain ul.main .mainBox span {
+	font-size: 12px;
+	color: #8f8f8f;
+	line-height: 24px;
+	margin: 1.5em 0 0 0;
+}
+
+.rightMain ul.main .data {
+	float: right;
+}
+
+.rightMain ul.main .data b,
+.rightMain ul.main .data p,
+.rightMain ul.main .data img {
+	display: block;
+}
+
+.rightMain ul.main .data b {
+	font-size: 14px;
+	color: #252525;
+}
+
+.rightMain ul.main .data p {
+	font-size: 8px;
+	color: #8b8b8b;
+}
+
+.rightMain ul.main .data img {
+	margin: 0.5em 0 0 0;
+}

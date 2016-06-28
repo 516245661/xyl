@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<script src="../jq/lib/js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../jq/lib/js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<title>年月日demo</title>
+	</head>
+	<style type="text/css">
+		.box {
+			width: 300px;
+			margin: 100px auto;
+		}
+	</style>
+
+	<body>
+		<div class="box">
+			<select class="YY chooes" v-on:change="changeE">
+				<option v-for="YY in YY">{{YY}}</option>
+			</select>年
+			<select class="MM chooes" v-on:change="changeE">
+				<option v-for="MM in MM">{{MM}}</option>
+			</select>月
+			<select class="DD chooes">
+				<option v-for="DD in DD">{{DD}}</option>
+			</select>日
+		</div>
+	</body>
+
+</html>
+<script src="demo.js" type="text/javascript" charset="utf-8"></script>

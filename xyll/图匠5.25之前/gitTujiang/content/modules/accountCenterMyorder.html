@@ -1,0 +1,45 @@
+<!--css 公共部份  侧边栏  头部-->
+<link rel="stylesheet" type="text/css" href="css/em_Left_sidebar_Center.css" />
+<link rel="stylesheet" type="text/css" href="css/accountCenter/accountCenterMyorder.css" />
+<!--公共部份  侧边栏  左-->
+<script type="text/javascript" src="js/em_Left_sidebar_Center.js"></script>
+
+<div>
+	<!--大框框包裹类容-->
+	<div class="bigBox">
+		<!--内容  头部导航-->
+		<div class="headNav"></div>
+		<!--主体内容  雇主的各种信息  侧边栏-->
+		<div class="con">
+			<!--侧边栏-->
+			<div class="sidebar">
+			</div>
+			<!--雇主的基本信息-->
+			<div class="guzhuInfo">
+				<!--挤20个像素-->
+				<div class="padding" id="accountCenterMyorder">
+					<h2>我的订单</h2>
+					<!--订单类容-->
+					<div class="orderInfo">
+						<span v-on:click="orderTy" data-orde = "3">服务中的订单(<em>{{findAccStyData.fuwuzhong}}</em>)</span>
+						<span v-on:click="orderTy" data-orde = "5">交易完成(<em>{{findAccStyData.jiaoyiwang}}</em>)</span>
+						<span v-on:click="orderTy" data-orde = "7">待评价(<em>{{findAccStyData.daipijia}}</em>)</span>
+						<span v-on:click="orderTy" data-orde ="全部订单" style="float: right;padding-right:30px;font-size: 12px;">查看全部订单</span>
+					</div>
+					<!--订单数据显示-->
+					<div class="order_con">
+						<ul style="border-top:  1px solid #EDEDED;" v-for='dataInfoOne in dataInfoOnes'>
+							<li class="li_1"><span style="font-size: 22px;">￥{{dataInfoOne.totalPrice}}</span><b v-on:click="jumpOrder" data-order="{{dataInfoOne.demandId}}">{{dataInfoOne.demandTitle}}</b></li>
+							<li class="li_2"><em>{{dataInfoOne.demandDesc}}</em> <span>{{dataInfoOne.robState}}</span></li>
+						</ul>
+					</div>
+					<!--立即发布需求-->
+					<div class="publishNeed">
+						<button><a href="iamHeadwaiter/makeDemand.html?employerid={{ADDRESS.employerid}}&accounttype=0">立即发布需求</a></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/accountCenterMyorder.js"></script>

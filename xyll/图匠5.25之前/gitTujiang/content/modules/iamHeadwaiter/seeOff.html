@@ -1,0 +1,65 @@
+<!--<link rel="stylesheet" type="text/css" href="css/css/webuploader.css">-->
+<!--<link rel="stylesheet" type="text/css" href="css/css/diyUpload.css">-->
+<link href="css/seeOff.css" rel="stylesheet" type="text/css">
+<script src="js/upfile.js"></script>
+
+<body>
+	<div id="seeOff">
+		<div class="seeOff">
+			<p class="seePic"><img src="img/seeOff.png" /></p>
+			<!--上传图片-->
+			<div class="upload_img">
+				<button class="upImg"> 上传图片</button>
+				<input id="file" type="file" multiple v-on:change="upload" >
+			</div>
+			<!--反馈信息  显示图片-->
+			<p  class="praP">上传成功的图片</p>
+			<div id="console">
+				<ul v-for="wancallbackOk in wancallbackOk">
+					<li>
+						<a target="_blank" href="{{wancallbackOk.url}}">{{wancallbackOk.name}}</a>
+					</li>
+				</ul>
+			</div>
+			<!--已上传的图片信息-->
+			<p class="praP">之前已经上传的图片</p>
+			<div class="wanTuImgC">
+				<ul v-for="wanTuImg in wanTuImg">
+					<li> 
+						<a href="{{wanTuImg.url}}">{{wanTuImg.name}}</a>
+					</li>
+				</ul>
+			</div>
+			<!--失败信息-->
+			<div class="fail">
+				<p>上传失败原因<em> </em></p>
+				<ul v-for="wancallbackFl in wancallbackFl[0]">
+					<li>{{wancallbackFl.name}}</li>
+				</ul>
+			</div>
+			<!--遮罩层-->
+			<div id="background" class="background" style="display: none; "></div>
+			<div id="progressBar" class="progressBar" style="display: none; ">正在上传图片，休息一下...</div>
+
+			<!--模态框 弹出上传成功失败的信息-->
+			<!--<div class="modal_upimg">
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+
+				<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content">
+							...
+						</div>
+					</div>
+				</div>
+			</div>-->
+			<span>
+				<p>请选择您的派单方式</p>
+				<b id="system" class="active" v-on:click="cilckJump" data-clickJjj = "指定派单">系统派单</b>
+				<b id="assign" v-on:click="cilckJump" data-clickJjj = "指定派单">指定派单</b>
+			</span>
+		</div>
+	</div>
+</body>
+
+<script src='js/seeOff.js'></script>

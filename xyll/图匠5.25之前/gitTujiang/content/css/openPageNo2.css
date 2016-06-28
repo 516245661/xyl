@@ -1,0 +1,387 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: arial, helvetica, "微软雅黑", "黑体";
+}
+li{
+	list-style: none;
+}
+a{ text-decoration: none;}
+body{
+	width: 100%;
+}
+em{
+	font-style: normal;
+}
+#nav{
+	width: 96%; height: 80px; background: black; padding: 0 2%; line-height: 80px;
+}
+#nav img{
+	margin-top: 16px;
+}
+ul.logoImg{
+	width: 11%; float: left;
+}
+ul.nav{
+	float: left;
+}
+ul.nav{
+	width: 76%;
+}
+ul.nav div.nav{
+	margin: 0 auto; display: block; overflow: hidden; width: 870px;
+}
+
+ul.nav li{
+	float: left; height: 76px; padding:0 1.6%; margin: 0 3%; line-height: 76px;
+}
+ul.nav li:hover{
+	border-bottom: 4px solid white;
+}
+ul a{
+	color: white;
+}
+ul.login{
+	float: right; text-indent: 2em; background:url(../img/openPageNo2/icon.png) no-repeat 6% -3%; display: none; width: 9%; 
+}
+ul.past{
+	color: white; position: relative; float: right;min-width: 9%; text-align: center;
+}
+ul.past>li>a{
+	height: 80px; display: block;
+}
+ul.past:hover ul{
+	display: block;
+}
+ul.past ul{
+	position: absolute; z-index: 1; display: none; background: #00113d; width: 100%;
+}
+ul.past ul>li{
+	height: 40px; line-height: 40px; font-size: 14px; cursor: pointer; text-align: center;
+}
+ul.past ul>li:hover{
+	background: #eff3f5; color: black;
+}
+ul.past ul>li:hover a{
+	color: black;
+}
+/*banner*/
+#banner{
+	width: 100%; position: relative; background: #011440;
+}
+#banner span{
+	width: 100%; margin: 0 auto; display: block;
+}
+#banner span img{
+	width: 100%;
+}
+#banner p{
+	width: 40px; height: 76px; display: block; background: url(../img/openPageNo2/icon.png) no-repeat; position: absolute;
+	top: 34%;
+}
+#banner p.left{
+	background-position: 7% 22%; left: 2%;
+}
+#banner p.right{
+	background-position: 8% 59%; right: 2%;
+}
+/**/
+#recommend{
+	width: 98%; padding: 117px 1% 0 1%;
+}
+#recommend h2{
+	text-align: center; font-size: 32px;
+}
+#recommend p{
+	text-align: center; font-size: 18px;
+}
+#recommend ul.type{
+	overflow: hidden;
+}
+ul.type li{
+	float: left; padding: 12px 32px; cursor: pointer;
+}
+ul.type li.active{
+	border: solid 1px black; border-radius: 2em;
+}
+ul.name{
+	padding-top: 38px; width: 100%;
+}
+ul.name div{
+	overflow: hidden;
+}
+ul.name div>li{
+	float: left; margin: 0.5% 0.4%; width: 24%; position: relative;
+}
+ul.name div > li img{
+	width: 100%;
+}
+ul.name ul.main{
+	position: absolute; top: 0; left: 0; text-align: center; width: 100%; background: black; opacity: 0.7;
+	color: white; padding: 190px 0 98px 0; display: none;
+}
+ul.name ul.main li,ul.name ul.main span{
+	display: block;
+}
+ul.name ul.main h3{
+	font-size: 26px;
+}
+ul.name ul.main li{
+	line-height: 36px; font-size: 20px;
+}
+ul.name ul.main li.detail{
+	border-radius: 2em; background: white; color: black; width: 150px; margin: 10px auto 170px; cursor: pointer;
+}
+ul.name ul.main span b{
+	padding: 0 14px; font-weight: normal;
+}
+ul.name ul.main span b.leven{
+	border-left: 1px solid white; border-right: 1px solid white;
+}
+ul.name ul.main span b em{
+	color: red;
+}
+/*需求大厅*/
+#requirements{
+	padding: 110px 2% 0; width: 98%;
+}
+#requirements h2,#requirements p,#requirements b{
+	text-align: center;
+}
+#requirements h2{
+	font-size: 32px;
+}
+#requirements>p{
+	line-height: 23px; font-size: 18px;
+}
+#requirements>b{
+	display: block; margin: 0 auto; width: 237px; height: 62px; text-align: center; line-height: 60px; 
+	border-radius: 2em; border: solid 1px black; margin-top: 2%; cursor: pointer;
+}
+#requirements>b a{
+	color: black;
+}
+ul.requirements{
+	overflow: hidden; margin-top: 2%;
+}
+ul.requirements>li{
+	float: left; width: 19.8%; margin-top: -4px; position: relative;
+}
+ul.requirements img{
+	width: 100%; 
+}
+ul.requirements ul.main{
+	position: absolute; top: 0; left: 0; color: white; background: black; opacity: 0.7; width: 100%; text-align: center;
+	font-size: 19px; padding: 80px 0; display: none;
+}
+ul.requirements ul.main li.detail{
+	font-size: 13px; margin: 10px 0 32px 0;
+}
+/*精英设计师*/
+#resources{
+	width: 100%; padding-top: 100px; color: white; overflow: hidden;
+}
+ul.resources{
+	width: 300%; overflow: hidden;
+}
+li.employer{
+	 background: url(../img/openPageNo2/employer.jpg) no-repeat center 0;
+}
+li.goodProjector{
+	 background: url(../img/openPageNo2/designer.jpg) no-repeat center 0;
+}
+li.goodTeam{
+	 background: url(../img/openPageNo2/team.jpg) no-repeat center 0;
+}
+ul.resources>li{
+	float: left;width: 33.3%; overflow: hidden; height: 1000px; position: relative;
+}
+ul.resources>li>p{
+	position: absolute; top: 45%; background: url(../img/openPageNo2/icon.png) no-repeat; cursor: pointer;
+}
+ul.resources>li p.left{
+	left: 4%; background-position: 7% 25.2%; text-indent: 2em;
+}
+ul.resources>li p.right{
+	right: 4%; background-position: -23% 56.9%; padding-right: 4%;
+}
+ul.resources>li ul{
+	width: 800px; margin: 0 auto;
+}
+ul.resources>li h2{
+	text-align: center; font-size: 47px; font-weight: normal; margin-top: 60px;
+}
+ul.resources>li p.top{
+	text-align: center; font-size: 40px; font-family: "宋体";
+}
+ul.employer div{
+	overflow: hidden;
+}
+ul.employer div span{
+	display: block;
+}
+ul.employer li{
+	overflow: hidden; border-bottom: solid 1px #43423f; padding: 30px 0;
+}
+ul.employer li.No1{
+	margin-top: 50px;
+}
+ul.employer li p{
+	float: left; font-size: 70px; width: 33.3%; text-align: center; font-family: Kravitz,arial;	
+}
+ul.employer li.No1 p.paiming{
+	color: #d90f0f;
+}
+ul.employer li.No2 p.paiming{
+	color: #24b9b7;
+}
+ul.employer li.No3 p.paiming{
+	color: #6cd11a;
+}
+ul.employer li p.name{
+	font-family: "微软雅黑"; font-size: 52px;
+}
+ul.employer li p.name b{
+	margin-left: 46%;
+}
+ul.employer li p.paiming b{
+	margin-left: 30%; color: white;
+}
+ul.employer li b{
+	display: block; font-size: 20px; font-weight: normal; margin-left: 21%;
+}
+/*论坛*/
+#bbs{
+	width: 100%; padding: 100px 0 0 0;
+}
+.bbs{
+	width: 100%; padding-bottom: 50px;
+}
+.bbs h2{
+	text-align: center; font-size: 40px;
+}
+.bbs p{
+	font-weight: bold;text-align: center; font-size: 20px;
+}
+.bbs b{
+	width: 670px; margin: 0 auto; display: block; overflow: hidden; font-weight: normal; margin-top: 2%;
+}
+.bbs b em{
+	width: 205px; height: 47px; float: left; border: solid 1px black; margin-right: 15px; font-size: 22px;
+	text-align: center; line-height: 47px; cursor: pointer;
+}
+.bbs b em.active{
+	color: white; background: black;
+}
+div.data{
+	width: 100%; background: black; color: white; padding: 50px 0; margin-bottom: 1px;
+}
+div.data span{
+	width: 860px; margin: 0 auto; display: block; overflow: hidden;
+}
+p.data,ul.content{
+	float: left;
+}
+p.data{
+	width: 195px; font-size: 86px; font-family: "宋体"; text-align: center;
+}
+p.data b{
+	font-size: 40px; display: block; font-weight: normal; text-align: right; margin-top: -11%;font-family: "宋体";
+}
+ul.content{
+	width: 600px; margin-left: 7%;
+}
+ul.content li{
+	font-size: 14px;
+}
+ul.content li.title{
+	font-size: 22px; margin-bottom: 34px;
+}
+
+/*footer*/
+
+footer {
+	overflow: hidden;
+	padding-bottom: 2em;
+	background: #373737;
+	padding: 2% 0 2% 0;
+	color: white;
+	margin-top: -1px;
+}
+
+.footer {
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+footer b {
+	font-size: 16px;
+	display: block;
+	padding: 0 0 1em 0;
+	margin: 2em 0 0 0;
+}
+
+footer ul {
+	overflow: hidden;
+	width: 220px;
+	float: left;
+}
+
+footer li {
+	float: left;
+	margin: 0 2em 0 0;
+}
+
+footer li a {
+	font-size: 11px;
+	color: white;
+	line-height: 24px;
+}
+
+footer ul.yard {
+	width: 261px;
+	margin: 0 0 0 3.3em;
+}
+
+footer ul.yard h5 {
+	float: left;
+}
+
+footer .yard .ios {
+	margin: 0.8em 0 0 1em;
+}
+
+footer .yard .Android {
+	margin: 0.8em 0 0 2em;
+}
+
+#footer {
+	text-align: center;
+	line-height: 50px;
+	height: 50px;
+}
+p.bottom{
+	width: 100%; text-align: center; line-height: 52px; font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

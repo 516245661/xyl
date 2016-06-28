@@ -1,0 +1,215 @@
+* {
+	padding: 0px;
+	margin: 0px auto;
+}
+
+ul li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+b {
+	font-weight: normal;
+}
+
+body {
+	font-size: 15px;
+	font-family: "微软雅黑";
+	background: #EEEEEE;
+	padding: 30px;
+}
+
+
+/*大框框 */
+
+.bigBox {
+	width: 1200px;
+	background: #FFFFFF;
+	overflow: hidden;
+}
+
+
+/*导航  框框内  上*/
+
+.headNav {
+	float: left;
+	width: 100%;
+	background: #454D50;
+	font-size: 12px;
+}
+.headNav ul{
+	overflow: hidden;
+}
+
+
+/*导航  li 的样式*/
+
+.headNav ul li {
+	text-align: center;
+	float: left;
+	width: 10%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 16px;
+}
+
+.headNav ul li a {
+	color: #f8fffa;
+}
+
+.headNav ul .li_gz {
+	width: 214px;
+	background: #029159;
+}
+
+.headNav ul .li_fws {
+	float: right; font-size: 12px;
+}
+
+
+/*内容框框*/
+
+.con {
+	width: 100%;
+	overflow: hidden;
+	background: white;
+}
+
+
+/*测边栏  个人的资料点击 链接*/
+
+.sideBar {
+	float: left;
+	width: 183px;
+	height: 750px;
+	padding: 30px 15px 0 15px;
+	border-right: 1px solid #F0F0F0;
+}
+
+.sideBar dl {
+	overflow: hidden;
+	border-bottom: 1px dotted #e9e9e9;
+	padding-bottom: 30px;
+}
+
+.sideBar dl img,
+.sideBar dl dd {
+	display: block;
+	float: left;
+}
+
+.sideBar dl {
+	font-size: 14px;
+}
+
+.sideBar dl dd {
+	padding: 0 0 0 11px;
+}
+
+.sideBar dl dd b {
+	line-height: 34px;
+	
+	font-size: 16px;
+}
+
+.sideBar dl dd p {
+	width: 58px;
+	height: 22px;
+	text-align: center;
+	line-height: 22px;
+	background: #01a161;
+	font-size: 12px;
+	color: white;
+	border-radius: 2px;
+	margin: 0 0 0 0;
+}
+
+.sideBar dl img {
+	width: 60px;
+	height: 60px;
+}
+
+.sideBar span {
+	font-size: 12px;
+	color: #6d6d6d;
+}
+
+.sideBar span p {
+	display: inline-block;
+	width: 100%;
+	line-height: 32px;
+	border-bottom: dotted 1px #e3e3e3;
+}
+
+.sideBar span p b {
+	color: #01a161;
+	display: inline-block;
+}
+
+.sideBar span p b.chongzhi {
+	margin: 0 0 0 6%;
+}
+
+.sideBar span p.szxx {
+	text-align: center;
+}
+
+.sideBar h4 {
+	width: 60%;
+	padding-top: 20px;
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+.sideBar h4 a {
+	color: #029159;
+	font-size: 14px;
+}
+
+.sideBar ul li {
+	text-align: left;
+	width: 60%;
+	height: 25px;
+	line-height: 25px;
+}
+
+.sideBar ul li a {
+	color: black;
+	font-size: 13px;
+}
+
+.sideBar ul li a.active {
+	color: #01a161;
+}
+
+.sideBar ul li a:hover {
+	color: #01a161;
+}
+/*内容里 标题*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

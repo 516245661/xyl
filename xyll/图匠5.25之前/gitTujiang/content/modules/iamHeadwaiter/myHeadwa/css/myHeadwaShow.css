@@ -1,0 +1,141 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+b,
+strong {
+	font-weight: normal;
+}
+
+input,
+textarea {
+	text-indent: 2em;
+}
+
+.show {
+	float: left;
+	width: 926px;
+	padding: 2.5%;
+}
+/*内容*/
+.switchMov,.bulletin,.helpCen,.includeRanking{
+	width: 44%; padding: 0 2%; border: solid 1px #dddddd; margin: 0 0 2% 0;
+}
+.switchMov ul h4,.bulletin ul h4,.helpCen h4,.includeRanking h4{
+	font-size: 16px; border-bottom: 1px solid #dddddd; display: inline-block; line-height: 3em; width: 100%; 
+	font-weight: bold;
+}
+.switchMov{
+	float: left;  font-family: "黑体";
+}
+.switchMov ul>p{
+	 border-bottom: 1px dotted #dddddd; display: inline-block; line-height: 3em; width: 100%;font-size: 15px;
+}
+.switchMov ul p b{
+	color: #01a161;
+}
+.switchMov ul span{
+	display: inline-block; padding: 3% 0;
+}
+.switchMov ul span p{
+	line-height: 2em; font-size: 14px;
+}
+.bulletin{
+	float: right;  font-family: "黑体";
+}
+.bulletin p{
+	line-height: 1.8em;
+}
+.bulletin p.first{
+	margin: 0.6em 0 0 0;
+}
+.bulletin p.last{
+	margin: 0 0 0.6em 0;
+}
+/*发现订单*/
+.findForm{
+	clear: left; width: 96%; padding: 0 2%; border: 1px solid #dddddd; margin: 2% 0 2% 0;
+}
+.findForm p{
+	line-height: 3em; display: inline-block; width: 100%; border-bottom: #dddddd solid 1px;
+}
+.findForm p b{
+	float: left; font-size: 16px; font-weight: bold;
+}
+.findForm p strong{
+	float: right; font-size: 12px;
+}
+.findForm p strong a{
+	color: #01a060;
+}
+.findForm ul{
+	 border-bottom: #dddddd dotted 1px;
+}
+.findForm ul li{
+	display: inline-block; width: 100%; line-height: 2em; overflow: hidden;
+}
+.findForm ul li:first-child{
+	margin: 2% 0 0 0;
+}
+.findForm ul li.last{
+	overflow: hidden;
+}
+.findForm ul li.last strong{
+	float: left;
+}
+.findForm ul li.last b{
+	float: right; padding: 0 4% 0 4%;
+}
+.findForm ul li:first-child b,.findForm ul li:first-child strong{
+	float: left;
+}
+.findForm ul li:first-child b{
+	font-size: 20px; color: #008000;
+}
+.findForm ul li:first-child strong{
+	font-size: 14px; line-height: 30px; margin-left: 3%;
+}
+.findForm ul li:last-child{
+	color: #939393; font-size: 12px; margin: 0 0 1em 0;
+}
+/**/	
+.helpCen{
+	float: left;
+}
+.helpCen h4{
+	
+}
+.helpCen img{
+	width: 408px; height: 108px; margin: 3% 0 3% 0;
+}
+.helpCen p{
+	font-size: 12px; display: inline-block; line-height: 2.5em;
+}
+.includeRanking{
+	float: right; padding-bottom: 10px;
+}
+.includeRanking h4{
+	
+}
+.includeRanking p{
+	display: inline-block; line-height: 2.5em; width: 100%; color: #575556; font-size: 14px; font-family: "微软雅黑";
+}
+.includeRanking p b{
+	margin: 0 10% 0 0; float: right; color: #00a263;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
