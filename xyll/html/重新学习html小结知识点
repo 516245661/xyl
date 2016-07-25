@@ -1,0 +1,17 @@
+h1标签作为一个标题 一般就不要乱求用！！
+p就是文章的段落 记住哦！
+<br/>换行标签  <hr> 水平线
+<abbr>这个是定义缩写的东东</abbr>
+<address>作者的简述 文章的简述</address>
+
+<b>字体加粗</b> <i>斜体</i>
+<em>强调文本</em><strong>也是加粗</strong>
+<span> 用于对文档中的行内元素进行组合。</span>
+<sub>下脚标</sub><sup>上角标</sup>
+<base>定义所有的a标签属性 默认值<base>
+<header>头部</header> <footer>尾部底部</footer> <nav>导航</nav>
+<label>表单input用</label>
+<pre>文本格式</pre>
+<progress value="22" max="100">这个是进度条</progress>
+<small>小型字体</small>
+
