@@ -7,6 +7,7 @@ p就是文章的段落 记住哦！
 <b>字体加粗</b> <i>斜体</i>
 <em>强调文本</em><strong>也是加粗</strong>
 <span> 用于对文档中的行内元素进行组合。</span>
+<mark>在这里的东西高亮显示 就是不同其他的地方</mark>
 <sub>下脚标</sub><sup>上角标</sup>
 <base>定义所有的a标签属性 默认值<base>
 <header>头部</header> <footer>尾部底部</footer> <nav>导航</nav>
@@ -15,3 +16,32 @@ p就是文章的段落 记住哦！
 <progress value="22" max="100">这个是进度条</progress>
 <small>小型字体</small>
 
+
+<meta http-equiv="refresh" content="30"> 每30秒刷新页面一次
+<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">  定义关键字
+
+将图片分区域实现不同的效果
+<img src="planets.gif" width="145" height="126" alt="Planets"
+usemap="#planetmap">
+<map name="planetmap">
+<area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+<area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+</map>
+
+input的加减乘除
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+  <input type="range" id="a" value="50">100
+  +<input type="number" id="b" value="50">
+  =<output name="x" for="a b"></output>
+</form>
+就是一个页面
+<iframe src="URL"></iframe>
+
+
+scheme://host.domain:port/path/filename  链接各个的含义
+scheme - 定义因特网服务的类型。最常见的类型是 http
+host - 定义域主机（http 的默认主机是 www）
+domain - 定义因特网域名，比如 w3cschool.cc
+:port - 定义主机上的端口号（http 的默认端口号是 80）
+path - 定义服务器上的路径（如果省略，则文档必须位于网站的根目录中）。
+filename - 定义文档/资源的名称
