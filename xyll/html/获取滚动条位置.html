@@ -1,5 +1,4 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
 	<HTML>
 
 	<HEAD>
@@ -15,11 +14,7 @@
 			function fnLoad() {
 				var arr;
 				if(arr = document.cookie.match(/scrollTop=([^;]+)(;|$)/))
-				//arr[0] scrollTop=200;        
-				//arr[1] 200        
-					alert(arr[1]);
 				document.documentElement.scrollTop = parseInt(arr[1]);
-				//alert(document.documentElement.scrollTop);       
 				document.body.scrollTop = parseInt(arr[1]);
 			}
 			//页面刷新前保存滚动条位置信息到cookie    
