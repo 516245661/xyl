@@ -1,0 +1,39 @@
+background-position:right top;  背景图片也可定位
+text-transform:lowercase; 设置文本的大小写  或者首个大写 
+text-decoration:line-through; 属性用来设置或删除文本的装饰。   主要用来删除a标签的下划线
+text-indent:50px; 首行缩进多少
+letter-spacing:2px; 字符之间的距离
+line-height:30px; 行与行之间的高度
+vertical-align:text-top;  垂直对齐图片高度
+direction:rtl; 文本方向
+word-spacing:30px; 单词或者汉子之间的间隔
+text-shadow:2px 2px #FF0000;  添加文本的阴影
+16px=1em
+cursor:pointer;  手指
+
+div+p 相邻兄弟选择器
+div~p 普通兄弟选择器选取所有指定元素的相邻兄弟元素。
+:first-child  选择元素的第一个子元素
+:last-child   选择元素的最后一个子元素
+input:checked  选择所有选中的表单元素
+input:disabled  选择所有禁用的表单元素
+p:empty	选择所有没有子元素的p元素
+p:not(selector) 选择所有p以外的元素
+p:nth-child(2)  	选择所有p元素的第二个子元素
+:before  在每个<p>元素之前插入内容
+:after 在每个<p>元素之后插入内容
+
+opacity:0.4;  透明度
+@media 规则允许在相同样式表为不同媒体设置不同的样式。
+
+
+
+
+
+
+
+
+
+
+
+
