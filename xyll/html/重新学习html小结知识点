@@ -21,19 +21,12 @@ p就是文章的段落 记住哦！
 <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">  定义关键字
 
 将图片分区域实现不同的效果
-<img src="planets.gif" width="145" height="126" alt="Planets"
-usemap="#planetmap">
-<map name="planetmap">
-<area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
-<area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
-</map>
+<img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+<map name="planetmap"><area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun"><area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury"></map>
 
 input的加减乘除
-<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
-  <input type="range" id="a" value="50">100
-  +<input type="number" id="b" value="50">
-  =<output name="x" for="a b"></output>
-</form>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0<input type="range" id="a" value="50">100+<input type="number" id="b" value="50">=<output name="x" for="a b"></output></form>
+
 就是一个页面
 <iframe src="URL"></iframe>
 
