@@ -13,8 +13,8 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
 <figure>标签规定独立的流内容（图像、图表、照片、代码等等）。<figcaption>元素应该被置于 "figure" 元素的第一个或最后一个子元素的位置。
 
 typeof()
-
-
+Number.isNaN() 检查是否是为nan
+Math.trunc方法用于去除一个数的小数部分，返回整数部分。
 
 
 
