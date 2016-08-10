@@ -8,15 +8,14 @@
 		<title></title>
 	</head>
 	<style type="text/css">
-		#anchor {
+		/*#anchor {
 			position: relative;
 			float: left;
 			width: 300px;
 			height: 1000px;
-			background-color: green;
 			top: 100px;
 			z-index: 1000;
-		}
+		}*/
 	</style>
 	<script src="../jq/lib/js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
 
@@ -140,15 +139,37 @@
 
 </html>
 <script type="text/javascript">
-	var oldSite = new Object();
-	oldSite.left = $("#anchor").offset().left;
-	oldSite.top = $("#anchor").offset().top;
-	$(window.document).scroll(function() {
-		var scrolltop = $(document).scrollTop();
-		var top = oldSite.top + scrolltop;
-		$("#anchor").offset({
-			top: top
-		});
-		alert(132)
-	});
+
+
+$(document).height();
+console.log('页面文档的高度'+ $(document).height());
+
+console.log("浏览器，显示区域的高度"+ $(window).height());
+
+console.log("滚动条到垂直顶部的高度"+$(document).scrollTop());
+
+console.log("滚动条的高度"+ document.body.scrollHeight);
+
+console.log("浏览器，当前窗口文档body的高度"+$(document.body).height());
+
+console.log("浏览器当前窗口文档body的总高度"+$(document.body).outerHeight(true));
+
+// console.log("111" + scollPostion().top);
+
+//if($(document).height())
+//	var oldSite = new Object();
+//	oldSite.left = $("#anchor").offset().left;
+//	oldSite.top = $("#anchor").offset().top;
+//	$(window.document).scroll(function() {
+//		var scrolltop = $(document).scrollTop();
+//		var top = oldSite.top + scrolltop;
+//		$("#anchor").offset({
+//			top: top
+//		});
+//	});
+
+
+
+
+
 </script>
