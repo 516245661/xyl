@@ -1,0 +1,36 @@
+npm install -g cnpm --registry=https://registry.npm.taobao.org  //淘宝镜像文件 cnpm 
+<template></template> html 模板    <script></script>  js    <style></style>  css  
+
+data 参数
+methods  这个是方法{
+就是存放方法的地方
+}
+watch  监听方法   对数据的监听，数据的变化所进行的方法{
+为了发现对象内部值的变化，可以在选项参数中指定 deep: true。注意监听数组的变动不需要这么做。
+在选项参数中指定 immediate: true 将立即以表达式的当前值触发回调：
+}
+
+
+
+
+v-text v-html {{}}  数据的渲染   v-if(直接就没有这个元素，当成立才有这个元素) v-show(就行display来隐藏) v-for渲染列表，循环渲染
+v-on:click or @click 事件的绑定  
+v-bind or :(简写)  属性的绑定  	eg: <div :class=" red : idRed"></div>   <div class="[classA , classB]"></div>
+
+@keyup.enter = "shijian"  键盘监听   @keyup.13 = "shijian"
+<!-- 键修饰符，键别名 --><input @keyup.enter="onEnter">        <!-- 键修饰符，键代码 --><input @keyup.13="onEnter">
+
+
+
+
+
+
+
+如何去划分组建 
+先引用 "组件"，然后用components"注册组件" 注册后才可以使用
+components :[header , footer]
+功能模块 select ,pagenation
+页面区域  header ,footer , sidebar ...
+
+props 属性的意思 
+vue组件之间的通信

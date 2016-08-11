@@ -1,0 +1,162 @@
+<link rel="stylesheet" type="text/css" href="css/myMainPage.css" />
+
+<body>
+	<!--外框-->
+	<div class="frame">
+		<!--外框 上面-->
+		<div class="frame-top">
+			<!--外框 头像-->
+			<div class="frame-top-left">
+				<img src="modules/iamHeadwaiter/img/header4.png" />
+			</div>
+			<!--外框 名字 简介 -->
+			<div class="frame-right">
+				<div class="studio">
+					<h4>品尚良将工作室 <img src="" alt="" /></h4>
+					<span>五星级</span>
+				</div>
+				<!--描述-->
+				<div class="depict">
+					<p>简介：我是一个敲代码的，大家多多照顾，我是一个敲代码的，大家多多照顾，我是一个敲代码的，大家多多照顾我是一个敲代码的，大家多多照顾我是一个敲代码的，大家多多照顾我是一个敲代码的，大家多多照顾我是一个敲代码的，大家多多照顾我是一个敲代码的，大家多多照顾我是一个敲代码的，大家多多照顾<a href="#">查看详情</a></p>
+					<span>四川-成都</span>
+				</div>
+			</div>
+		</div>
+		<!--外框 下 类容-->
+		<div class="frame-con">
+			<!--交易记录  交易评价 个人质料  点击-->
+			<div class="transac">
+				<a class="active" href="javascript:;">案例展示</a>
+				<a href="javascript:;">交易记录</a>
+				<a href="javascript:;">交易评价</a>
+				<a href="javascript:;">个人资料</a>
+			</div>
+			<!--交易记录数据 -->
+			<div class="specialCon">
+				<!--交易记录数据-->
+				<div class="open">
+					<ul v-for="messageAll in messageAlls" class="shop">
+						<div class="up">
+							<img src="modules/iamHeadwaiter/img/shop.png" />
+							<!--<img v-bind:src="messageAll.productPicture" />-->
+							<p>{{messageAll.productSyno}}</p>
+							<b>￥{{messageAll.productAssess}}.00</b>
+						</div>
+						<div class="down">
+							<b>{{messageAll.productPrice}}星级</b>
+							<a href="#">我要购买</a>
+						</div>
+					</ul>
+				</div>
+				<div class="record">
+					<p class="head"><b class="master">雇主</b><b class="need">需求</b><b class="data">成交时间</b><b class="include">收入</b></p>
+					<p v-for="messageAll in messageAlls">
+						<b class="master">{{messageAll.designerName}}</b>
+						<b class="need">{{messageAll.productSyno}}</b>
+						<b class="data">{{messageAll.creatDate}}</b>
+						<b class="include">{{messageAll.include}}.00</b>
+					</p>
+					<!--<p>
+						<b class="master">小轩摄影</b><b class="need">婚纱照片样本修图，要求精细，无明显错误</b><b class="data">2016-03-25</b><b class="include">5888.00</b>
+					</p>-->
+					
+				</div>
+				<div class="appraise">
+					<ul class="first">
+						<li class="score">
+							<p>店铺综合评分</p>
+							<span>完成质量<b>{{messageOne.quality}}.00<strong>分</strong></b></span>
+							<span>工作速度<b>{{messageOne.speed}}.00<strong>分</strong></b></span>
+							<span>服务态度<b>{{messageOne.attitude}}.00<strong>分</strong></b></span>
+						</li>
+						<li class="openScore">
+							<p>店铺综合评分</p>
+							<span>好评<b>{{messageOne.goodAssess}}</b></span>
+							<span>中评<b>{{messageOne.errorAssess}}</b></span>
+							<span>差评<b>{{messageOne.centralAssess}}</b></span>
+						</li>
+					</ul>
+					<ul class="second">
+						<li>雇主评价&nbsp;&nbsp;&nbsp;|</li>
+						<li><input type="radio" name="assess" id="" value="" />好评</li>
+						<li><input type="radio" name="assess" id="" value="" />中评</li>
+						<li><input type="radio" name="assess" id="" value="" />差评</li>
+						<p><b>查看交易评价规则</b><b>我的成长记录</b></p>
+					</ul>
+					<ul v-for="messageAll in messageAlls" class="tu">
+						<img src="modules/iamHeadwaiter/img/header5.png" />
+						<span>
+							<li><b>{{messageAll.designerName}}</b>
+								<b>{{messageAll.productSyno}}</b>
+								<b>成交价格：{{messageAll.include}}元</b>
+								<p>{{messageAll.creatDate}}</p>
+							</li>
+							<li class="pingjia">评价：{{messageAll.assessDescript}}</li>
+						</span>
+					</ul>
+					<!--<ul class="tu">
+						<img src="modules/iamHeadwaiter/img/header5.png" />
+						<span>
+							<li><b>品尚良将</b><b>婚纱摄影修图，要求精细，无明显错误</b><b>成交价格：800元</b><p>2016-03-15</p></li>
+							<li class="pingjia">评价：合作愉快，用户很认真，期待下次！</li>
+						</span>
+					</ul>-->
+				</div>
+				<div class="basicInfo">
+					<span>
+						<strong>基本信息<b>修改</b></strong>
+						<p>真实姓名：王凯（工作室）</p>
+						<p>昵称：品尚良家工作室</p>
+						<p>性别：男</p>
+						<p>生日：{{messageOne.creatDate}}</p>
+						<p>简介：{{messageOne.assessDescript}}</p>
+					</span>
+					<span>
+						<strong>联系方式<b>修改</b></strong>
+						<p>邮箱：751*******@qq.com</p>
+						<p>手机：150****501</p>
+						
+					</span>
+					<span>
+						<strong>工作经历<b>修改</b></strong>
+						<p>真实姓名：王凯（工作室）</p>			
+					</span>
+					<span>
+						<strong>学习经历<b>修改</b></strong>
+						<p>大专：某某大学</p>			
+					</span>
+				</div>
+			</div>
+			<!--<div class="basicInfo">
+					<span>
+						<strong>基本信息<b>修改</b></strong>
+						<p>真实姓名：王凯（工作室）</p>
+						<p>昵称：品尚良家工作室</p>
+						<p>性别：男</p>
+						<p>生日：1985-08-28</p>
+						<p>简介：顶顶顶顶顶大大大顶顶顶顶顶顶顶顶顶顶大大大的顶顶顶顶顶顶顶顶顶顶</p>
+					</span>
+					<span>
+						<strong>联系方式<b>修改</b></strong>
+						<p>邮箱：751*******@qq.com</p>
+						<p>手机：150****501</p>
+						
+					</span>
+					<span>
+						<strong>工作经历<b>修改</b></strong>
+						<p>真实姓名：王凯（工作室）</p>			
+					</span>
+					<span>
+						<strong>学习经历<b>修改</b></strong>
+						<p>大专：某某大学</p>			
+					</span>
+				</div>
+			</div>-->
+		</div>
+		<!--分页-->
+		<div class="page">
+			
+		</div>
+	</div>
+</body>
+<script src="modules/iamHeadwaiter/myHeadwa/js/myMainPage.js" type="text/javascript"></script>

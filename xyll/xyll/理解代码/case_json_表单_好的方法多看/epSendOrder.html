@@ -1,0 +1,123 @@
+<link rel="stylesheet" type="text/css" href="css/epSendOrder.css" />
+<script src="widget/upfile.js"></script>
+<div class="orderIfon" id='epSendOrder'>
+	<div class="ceter">
+		<form>
+			<div class="input_info">
+				<span>标题：</span><input type="text" v-model="params.demandTitle" />
+			</div>
+			<div class="input_info">
+				<span>图片：</span> <em class="btn_bgb_bn_fcw_n">上传<input type="file" name="" id="file" v-on:change="upload" /></em>(上传仅限zip/rar/cab/7z/iso压缩格式)
+				<p class="upWenjian"></p>
+			</div>
+			<div class="input_info">
+				<span>数量：</span><input type="number" min="1" id="number" value="1" style="text-align: center;" v-model="params.imgNumber" />
+			</div>
+			<div class="input_info" style="overflow: hidden;">
+				<span>价位(单价)：</span>
+				<div class="haomoney">
+					<label class="grade">
+						<input type="radio" value="1" v-model='params.priceX'/>1星
+					</label>
+					<!--v-on:click="totalMoneyClick"-->
+					<label class="grade">
+						<input type="radio" value="2" v-model='params.priceX'/>2星
+					</label>
+					<label class="grade">
+						<input type="radio" value="3" v-model='params.priceX'/>3星
+					</label>
+					<label class="grade">
+						<input type="radio" value="4" v-model='params.priceX'/>4星
+					</label>
+					<label class="grade">
+						<input type="radio" value="5" v-model='params.priceX'/>5星
+					</label>
+				</div>
+				<div class="danjia1">
+					<input type="number" v-model='params.imgPrice' placeholder="请输入单价" />
+				</div>
+			</div>
+			<div class="input_info jiaji_time">
+				<input type="checkbox" name="jiaji" class="jiaji" value="1" v-model="params.state" />加急（12-24小时内处理）
+				<template v-if='params.state'>
+					<em>12</em><input type="range" min="12" max="24" class="range" v-model='params.completeTime'/><em>24</em>
+				</template>
+			</div>
+			<div class="input_info">
+				<span>总价：</span>
+				<input type="text" class="totalPrice" v-model='params.totalPrice' style="width: 100px;text-align: center;" disabled="disabled"/>元
+			</div>
+			<!--需求要求 修片 -->
+			<template v-for='type in demands'>
+				<div class="require disReq1">
+					<p>{{type.type}}:</p>
+					<template v-for='demand in type.demands'>
+						<div v-if='type.type=="修片"' class="require_con">
+							<template v-if='params.priceX==1&&
+								(demand.name=="bahen"||demand.name=="suxing"||demand.name=="zhi")'>
+								<span>{{$index+1}}.{{demand.type}}：</span>
+								<template v-for='option in demand.options'>
+									{{option.name}}<input type="radio" v-model='demand.checked' 
+										checked="{{demand.checked==option.value?true:false}}"
+										value="{{option.value}}" name="{{demand.name}}" />
+								</template>
+							</template>
+							<template v-if='params.priceX ==2'>
+								<span>{{$index+1}}.{{demand.type}}：</span>
+								<template v-for='option in demand.options'>
+									{{option.name}}<input type="radio" v-model='demand.checked' 
+										checked="{{demand.checked==option.value?true:false}}" 
+										value="{{option.value}}" name="{{demand.name}}" />
+								</template>
+							</template>
+							<template v-if='params.priceX>=3'>
+								<span>{{$index+1}}.{{demand.type}}：</span>
+								<template v-for='option in demand.options'>
+									{{option.name}}<input type="radio" v-model='demand.checked' 
+										checked="{{demand.checked==option.value?true:false}}" 
+										value="{{option.value}}" name="{{demand.name}}"/>
+								</template>
+							</template>
+						</div>
+					</template>
+				</div>
+			</template>
+			<!--描述-->
+			<template v-if="params.priceX>=3">
+				<p>描述:</p>
+				<textarea name="{{miaoshu.miaoshu}}" v-model='miaoshu' rows="4" cols="38" style="padding: 10px;"></textarea>
+			</template>
+			<!--风格-->
+			<template v-if="params.priceX>=2">
+				<p>{{style.title}}:</p>
+				<div class="require_con" style="overflow: hidden;">
+					<div class="style" v-for="style in style.con">
+						<em>{{style.options[0].name}}</em><input type="checkbox" v-model='style.checked' 
+							value="{{style.options[0].value}}"/>
+					</div>
+				</div>
+				<!--<p style="color: red;">{{style.yaoqiu}}</p>-->
+			</template>  
+			<div class="input_info" style="overflow: hidden;">
+				<span class="btn_bgb_bn_fcw_n" v-on:click='updataOrder'>确定</span>
+			</div>
+		</form>
+	</div>
+
+</div>
+<!--遮罩层-->
+<div id="background" class="background" style="display: none; "></div>
+<div id="progressBar" class="progressBar" style="display: none; ">正在上传图片，休息一下...</div>
+<!--帮助中心-->
+<div class="ephelp">
+	<h3>帮助中心</h3>
+	<ul>
+		<li>1.</li>
+		<li>2.</li>
+		<li>3.</li>
+		<li>4.</li>
+		<li>5.</li>
+	</ul>
+</div>
+
+<script src="js/epSendOrder.js" type="text/javascript" charset="utf-8"></script>

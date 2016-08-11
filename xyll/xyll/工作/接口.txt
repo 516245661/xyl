@@ -1,0 +1,27 @@
+
+tp_help_player//
+
+addHelpPlayer
+deleteHelpPlayer
+updateHelpPlayer  id必传 如果要修改助力，传播人数 helpnumber relaynumber 不为空就行 如果修改普通用户是否给谁透过票openid必传 传对应的助力人id 和 投票人id
+findByIdHelpPlayer
+selectHelpPlayerPage
+findByOpenidTpHelpPlayer 传openid 查询对应用户信息
+findbyTpHelpPlayerRanking 必传 id 跟 helpid  查单独排名
+
+tp_help//
+
+
+
+addTpHelp
+deleteTpHelp
+updateTpHelp 
+findByIdTpHelp
+selectTpHelpPage
+
+授权跳转的是/app/pages/helpshouquan.jsp 取参数就是tpinfo.用户表的字段 暂时取openid id 
+
+
+021EUoM81zORyV1HHMO81MNqM81EUoMp
+"http://ludanmall/wap/micropower/micropwer.html?helpid=" + self1.helpid + "&playerid=" + data.id;
+https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx2dab0ef3ad37c83d&redirect_uri=http%3a%2f%2fludanmall.com%2fapp%2fusercenter.html?helpid='+this.helpid+',playerid='+this.playerid+'&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect

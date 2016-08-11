@@ -1,0 +1,78 @@
+em{
+	font-style: normal;
+}
+#orderFormInfo{
+	background: #f4f4f4;
+}
+.orderFormInfo{
+	width: 1200px; margin: 0 auto; padding: 120px 0 144px 0; overflow: hidden;
+}
+.orderFormInfo p{
+	
+}
+.orderFormInfo p.payTu{
+	text-align: center;
+}
+.orderFormInfo p.payTu img{
+	
+}
+.orderFormInfo p.orderInfo{
+	width: 398px; border: solid 1px #00a263; margin: 60px auto 0; text-align: center;
+	padding: 20px 0 80px 0;
+}
+.orderFormInfo p.orderInfo b,.orderFormInfo p.orderInfo em{
+	display: block;
+}
+.orderFormInfo p.orderInfo b{
+	font-size: 18px; color: black; margin: 0 0 2% 0;
+}
+.orderFormInfo p.orderInfo em{
+	font-size: 14px; color: #737373; 
+}
+
+.orderFormInfo ul.commodityInfo{
+	width: 99.9%; border: solid 1px #00a263; margin: 6% 0 0 0;
+}
+.orderFormInfo ul.commodityInfo li{
+	
+}
+.orderFormInfo ul.commodityInfo li b{
+	display: inline-block; text-align: center;
+}
+.orderFormInfo ul.commodityInfo li b.picture{
+	width: 14%; visibility: hidden;
+}
+.orderFormInfo ul.commodityInfo li b.commodity{
+	width: 21%;
+}
+.orderFormInfo ul.commodityInfo li b.money{
+	width: 27%;
+}
+.orderFormInfo ul.commodityInfo li b.number{
+	width: 9%;
+}
+.orderFormInfo ul.commodityInfo li b.position{
+	width: 22%;
+}
+.orderFormInfo ul.commodityInfo li.titleName{
+	border-bottom: 1px solid #00a263;
+}
+.orderFormInfo ul.commodityInfo li.titleName b{
+	height: 50px; line-height: 50px; color: #a3a3a3;
+}
+.orderFormInfo ul.commodityInfo li.mainName{
+	
+}
+.orderFormInfo ul.commodityInfo li.mainName b{
+	height: 132px; line-height: 132px;
+}
+.orderFormInfo ul.commodityInfo li.mainName b.picture{
+	visibility:visible;
+}
+
+.orderFormInfo p.really{
+	width: 197px; height: 38px; border: solid 2px #00a263; color: red; font-size: 17px; float: right;
+	text-align: center; line-height: 42px; margin: 2% 0 0 0;
+}
+
+

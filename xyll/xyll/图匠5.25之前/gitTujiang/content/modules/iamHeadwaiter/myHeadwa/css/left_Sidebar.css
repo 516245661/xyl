@@ -1,0 +1,118 @@
+* {
+	padding: 0px;
+	margin: 0px auto;
+}
+
+ul li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-size: 15px;
+	font-family: "微软雅黑";
+	background: #EEEEEE;
+	padding: 30px;
+}
+
+
+/*大框框 */
+
+.bigBox {
+	width: 1200px;
+	background: #FFFFFF;
+}
+
+
+/*导航  框框内  上*/
+
+.headNav {
+	float: left;
+	width: 100%;
+	background: #454D50;
+	font-size: 12px;
+}
+.headNav ul{
+	overflow: hidden;
+}
+
+/*导航  li 的样式*/
+
+.headNav ul li {
+	text-align: center;
+	float: left;
+	width: 10%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 16px;
+}
+
+.headNav ul li a {
+	color: white;
+}
+
+.headNav ul .li_gz {
+	width: 200px;
+	background: #029159;
+}
+
+.headNav ul .li_fws {
+	float: right; 
+	font-size: 12px;
+}
+
+
+/*内容框框*/
+
+.con {
+	width: 100%;
+	float: left;
+	background: white;
+}
+
+
+/*测边栏  个人的资料点击 链接*/
+
+.sidebar {
+	float: left;
+	width: 199px;
+	height: 750px;
+	text-align: center;
+	border-right: 1px solid #F0F0F0;
+}
+
+.sidebar h4 {
+	width: 60%;
+	padding-top: 20px;
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+.sidebar h4 a {
+	color: #029159;
+	font-size: 14px;
+}
+
+.sidebar ul li {
+	text-align: left;
+	width: 60%;
+	height: 25px;
+	line-height: 25px;
+}
+
+.sidebar ul li a {
+	color: black;
+	font-size: 13px;
+}
+.sidebar ul li a.active{
+	color: #01a161;
+}
+.sidebar ul li a:hover {
+	color: #01a161;
+}
+
+
+/*内容里 标题*/

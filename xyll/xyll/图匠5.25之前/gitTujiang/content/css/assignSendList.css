@@ -1,0 +1,134 @@
+#assignSL {
+	background: #f4f4f4;
+}
+
+.assignSL {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 120px 0 120px 0;
+}
+
+.assignSL p.seePic {
+	text-align: center;
+}
+
+.assignSL p.seePic img {
+	margin: 0 0 6% 0;
+}
+
+.assignSL p.recommend {
+	font-size: 18px;
+	text-align: center;
+	color: black;
+}
+
+.assignSL span {
+	display: block;
+	margin: 4% 0 0 0;
+	overflow: hidden;
+	width: 1200px;
+	position: relative;
+	background: no-repeat center;
+}
+
+.box {
+	overflow: hidden;
+	width: 1000px;
+	margin: 0 auto;
+	height: 420px;
+}
+
+.assignSL span ul {
+	display: block;
+	text-align: center;
+	position: relative;
+	margin: 0 0 10px 68px;
+	float: left;
+}
+
+.assignSL span ul img {
+	width: 120px;
+	height: 120px;
+	border-radius: 100%;
+}
+
+div.info {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: black;
+	opacity: 0.7;
+	color: white;
+	border-radius: 100%;
+	display: none;
+	width: 120px;
+	height: 120px;
+}
+
+.assignSL span ul:hover>div.info {
+	display: block;
+}
+
+div.info p {
+	line-height: 22px;
+}
+
+div.info p.one {
+	margin-top: 30%;
+}
+
+.assignSL p.fixed {
+	font-size: 18px;
+	text-align: center;
+	color: black;
+	width: 190px;
+	height: 54px;
+	line-height: 54px;
+	background: #00a263;
+	color: white;
+	margin: 6% auto 0;
+}
+
+p.page {
+	overflow: hidden;
+	float: right;
+	margin: 30px 13% 0 0;
+}
+
+p.page em {
+	float: left;
+	margin: 4px 6px;
+	cursor: pointer;
+	font-style: normal;
+}
+
+p.page strong {
+	margin: 4px 6px;
+	font-style: normal;
+	float: left;
+}
+
+p.page strong {
+	font-weight: normal;
+}
+
+p.page em:hover {
+	color: deepskyblue;
+}
+
+p.page strong#jump {
+	margin: 2px;
+}
+
+p.page em.active {
+	color: deepskyblue;
+}
+
+p.page strong#jump input {
+	width: 40px;
+}
+
+.modal-content{
+	text-align: center;
+	padding: 20px 10px 10px;
+}

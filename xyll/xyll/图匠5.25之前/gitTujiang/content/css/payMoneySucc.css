@@ -1,0 +1,24 @@
+#payMoneySucc{
+	width: 80%; border: solid 1px #009F5F; margin: 40px auto;
+}
+.payMoneySucc{
+	width: 290px; padding: 60px 0 480px 40%; display: block;
+}
+.payMoneySucc p{
+	font-size: 20px;
+}
+.payMoneySucc p.success{
+	font-size: 27px; color: red; line-height: 56px; background: url(../img/icon3.png) no-repeat 76% 2%; text-indent: 27%;
+}
+.payMoneySucc p.number{
+	margin: 64px 0 0 0; 
+}
+.payMoneySucc p.fukuan{
+	
+}
+.payMoneySucc p.look{
+	font-size: 16px; margin-top: 28px;
+}
+.payMoneySucc p.look b{
+	cursor: pointer; color: red; margin-right: 6px;
+}

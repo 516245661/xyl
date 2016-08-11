@@ -1,0 +1,51 @@
+.order_con{
+	width: 100%;
+}
+.head_assess{
+	width: 100%;
+	overflow: hidden;
+}
+.head_fuwus{
+    width: 155px;
+    height: 50px;
+    line-height: 50px;
+    background: #01A161;
+    color: #fff;
+    float: left;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.goodpj{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-top: 1px solid #01A161;
+	background: #F0F0F0;
+	color: #A5A4A4;
+}
+.goodpj input {
+	line-height: 40px;
+	height: 40px;
+	float: left;
+	    margin-left: 40px;
+}
+.goodpj span{
+	float: left;
+	line-height: 40px;
+	height: 40px;
+}
+.goodpj a{
+	float: right;
+	color: #A5A4A4;
+	margin-right: 10px;
+}
+/*评价记录*/
+.pjjl{
+	width: 100%;
+	height: 110px;
+}
+.pjjl_pic{
+	float: left;
+	width: 50px;
+}

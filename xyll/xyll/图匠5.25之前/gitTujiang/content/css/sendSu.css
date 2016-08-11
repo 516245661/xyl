@@ -1,0 +1,91 @@
+.iconSe {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 18px;
+	color: #3ec1e2;
+	padding: 4em 0 0 0;
+}
+
+.iconSe p {
+	display: block;
+	margin: 3% 0 0 0;
+	font-weight: 400;
+	color: #d5104c;
+}
+
+.iconSe p b {
+	color: #c9c9c9;
+	text-indent: 2em;
+	display: inline-block;
+	font-weight: 400;
+}
+.round {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 60px 0 70px 0;
+}
+
+.round p {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 27px;
+}
+
+.round p.active {
+	font-size: 14px;
+	color: #515151;
+	font-weight: normal;
+}
+
+#message {}
+
+.message {
+	padding: 60px 0 70px 0;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.message span {
+	width: 907px;
+	padding: 5px 0 34px 6px;
+	border: solid 1px black;
+	display: block;
+	margin: 0 0 9px 14%;
+}
+
+.message span p {
+	color: #000000;
+	font-size: 12px;
+	line-height: 34px;
+}
+
+.message span p.active {
+	font-size: 14px;
+	color: #515151;
+}
+
+.message span p b {
+	text-indent: 27px;
+	display: inline-block;
+}
+
+.message span p strong {
+	display: inline-block;
+	width: 49px;
+	height: 15px;
+	background: #00a263;
+	text-align: center;
+	line-height: 15px;
+	color: white;
+	margin-left: 9px;
+}
+
+.message span p b.main {
+	text-indent: 117px;
+}
+
+.message span p b.main a {
+	color: #00a263;
+}

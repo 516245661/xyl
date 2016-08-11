@@ -1,0 +1,51 @@
+/*我的收藏*/
+
+.myCollect .underWay {
+	padding: 27px 10px;
+	border-bottom: dotted 1px #e5e5e5;
+	border-top: dotted 1px #e5e5e5;
+}
+
+.myCollect .underWay span {
+	display: inline-block;
+}
+
+.myCollect .underWay span.shoucang {
+	width: 87px;
+	height: 34px;
+	border-radius: 3px;
+	border: 1px solid #b9b9b9;
+	text-align: center;
+	line-height: 34px;
+	background: #efefef;
+	font-size: 12px;
+	color: #6a6869;
+	float: right;
+	margin-top: 1.2%;
+	cursor: pointer;
+}
+
+.myCollect .money b,
+.myCollect .money p {
+	display: inline-block;
+}
+
+.myCollect .money b {
+	font-size: 22px;
+	color: #25C384;
+	line-height: 40px;
+	height: 40px;
+	
+}
+.myCollect .money p {
+	font-size: 14px;
+	line-height: 20px;
+	height: 20px;
+	text-indent: 1.5em;
+	border-left: solid 1px gray;
+}
+
+.myCollect li.main {
+	display: inline-block;
+	color: #A4A4A4;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="upfile.js"></script>
+</head>
+<body>
+<div>token(服务端生成)：<input id="token"></div>
+<div>目录：<input id="dir"></div>
+<div>出错重试次数：<input id="retry" value="0"></div>
+<div>最大文件限制：<input id="max" value="0"> 0表示没有限制</div>
+<div>文件：<input id="file" type="file" multiple onchange="upload(event)"></div>
+<div>反馈信息：
+    <div id="console"></div>
+</div>
+<script>
+
+    var uploader = uploadJSSDK;
+
+    function upload(e){
+        var files = e.target.files;
+        //上传
+        for(var i=0;i<files.length;i++){
+            uploader({
+                file: files[i],   //文件，必填,html5 file类型，不需要读数据流，
+                name:files[i].name, //文件名称，选填，默认为文件名称
+                token: 'UPLOAD_AK_TOP MjMzNDczOTU6ZXlKa1pYUmxZM1JOYVcxbElqb3hMQ0psZUhCcGNtRjBhVzl1SWpvdE1Td2lhVzV6WlhKMFQyNXNlU0k2TUN3aWJtRnRaWE53WVdObElqb2lkSFZxYVdGdVp5SXNJbk5wZW1WTWFXMXBkQ0k2TUgwOjJkZmQ4MzAxNmM4Y2JjODYzODg3MWJiY2ViOTdjZjlmMzUzOWZjMmE',  //token，必填
+                dir: '/测试/xyl',  //目录，选填，默认根目录''
+                retries: 0,  //重试次数，选填，默认0不重试
+              	maxSize: 50*1024*1024,  //上传大小限制，选填，默认0没有限制
+                callback: function (percent, result) {
+                    //percent（上传百分比）：-1失败；0-100上传的百分比；100即完成上传
+                    //result(服务端返回的responseText，json格式)
+                    result = JSON.stringify(result);
+                    var div = document.getElementById('console');
+                    div.innerHTML += "<div>"+percent+" "+result+"</div>";
+                }
+            });
+        }
+    }
+
+</script>
+</body>
+
+</html>

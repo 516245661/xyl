@@ -1,0 +1,40 @@
+.con_ul {
+	float: left;
+	width: 100%;
+}
+
+.con_ul ul li {
+	float: left;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+}
+
+.con_ul .li_1 {
+	width: 20%;
+}
+
+.con_ul .li_2 {
+	width: 30%;
+}
+
+.con_ul .li_3 {
+	width: 10%;
+}
+
+.con_ul_head {
+	width: 100%;
+	float: left;
+	background: #EFEFF0;
+}
+
+.con_ul_center {
+	width: 100%;
+	float: left;
+	color: #868686;
+}
+
+.con_ul ul {
+	border-bottom: 1px solid #E7E7E7;
+	font-size: 12px;
+}

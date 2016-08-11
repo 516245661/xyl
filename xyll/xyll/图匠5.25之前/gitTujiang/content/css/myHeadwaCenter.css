@@ -1,0 +1,1005 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+b,
+strong {
+	font-weight: normal;
+}
+
+input,
+textarea {
+	text-indent: 2em;
+}
+
+.headwaiterInfo {
+	float: left;
+	width: 926px;
+	padding: 0 30px 0 30px;
+}
+
+.headwaiterInfo h3 {
+	line-height: 80px;
+	display: inline-block;
+	color: #01a060;
+	width: 100%;
+}
+
+.headwaiterInfo div {}
+
+
+/*内容*/
+
+
+/*我的订单*/
+
+.myOrdain {
+	display: block;
+}
+
+.myOrdain .underWay {
+	padding: 33px 36px 36px 24px;
+	border-bottom: dotted 1px #e5e5e5;
+	border-top: dotted 1px #e5e5e5;
+}
+
+.myOrdain .underWay .money {
+	overflow: hidden;
+}
+.myOrdain .underWay .money b.yesNo{
+	float: right; font-size: 14px; display: none;
+}
+.myOrdain .underWay .money p{
+	cursor: pointer;
+}
+.myOrdain .underWay .money b.yesNo a{
+	margin-left: 5px
+}
+b.yesNo a.yes{
+	color: green;
+}
+b.yesNo a.no{
+	color: red;
+}
+.myOrdain .underWay .money b,
+.underWay .money p {
+	display: inline-block;
+}
+
+.myOrdain .underWay .money b {
+	font-size: 20px;
+	color: #00a168;
+	width: 84px;
+}
+
+.myOrdain .underWay .money p {
+	color: #595959;
+	border-left: 1px solid gainsboro;
+	text-indent: 1em;
+}
+
+.myOrdain .main {
+	overflow: hidden;
+	color: #8d8d8d;
+	font-size: 12px;
+	margin: 0.6em 0 0 0;
+}
+
+.myOrdain .main p {
+	float: left;
+	width: 210px;
+	height: 17px;
+}
+
+.myOrdain .main p.liulan {
+	margin: 0 0 0 24em;
+}
+
+.myOrdain .main b {
+	float: right;
+}
+
+
+/*评价管理*/
+
+.assess {
+	display: none;
+}
+
+.show_evaluate {
+	width: 100%;
+	margin: 20px 0px;
+}
+
+.show_head {
+	width: 400px;
+	float: left;
+	border: 1px solid #A19794;
+	margin-right: 60px;
+}
+
+.show_pad {
+	overflow: hidden;
+	padding: 5px 15px;
+}
+
+.show_head h5 {
+	font-size: 18px;
+	color: #9E9494;
+}
+
+.show_head ul {
+	width: 100%;
+	text-align: center;
+}
+
+.show_head ul li {
+	width: 33.33%;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+}
+
+.show_ceter {
+	overflow: hidden;
+	border-top: 1px solid #9EA1BF;
+}
+
+.show_ceter span {
+	font-size: 30px;
+	color: #029159;
+}
+
+.show_ceter ul li img {
+	width: 25px;
+	margin-right: 10px;
+}
+.show_ceter ul li strong{
+	margin-top: 5px;
+}
+.appraise {
+	position: absolute;
+	top: 515px;
+}
+
+.appraise ul.second {
+	overflow: hidden;
+	width: 814px;
+	font-size: 14px;
+	color: #565455;
+	height: 56px;
+	line-height: 56px;
+	padding: 0 30px 0 30px;
+	background: #ececec;
+}
+
+.appraise ul.second li,
+.appraise ul.second p {
+	display: inline-block;
+}
+
+.appraise ul.second li {
+	width: 80px;
+	text-align: center;
+}
+
+.appraise ul.second input {
+	height: 13px;
+}
+
+.appraise ul.second p {
+	float: right;
+}
+
+.appraise ul.second p b {
+	margin: 0 0 0 30px;
+	font-weight: normal;
+}
+
+.tu {
+	overflow: hidden;
+	padding: 25px 0 12px 23px;
+	border-bottom: 1px dotted #e6e6e6;
+}
+
+.tu img,
+.tu span {
+	display: inline-block;
+	float: left;
+}
+
+.tu span {
+	font-size: 12px;
+	padding: 0 58px 0 24px;
+	width: 83%;
+}
+
+.tu span li {
+	display: inline-block;
+	width: 100%;
+	line-height: 30px;
+}
+
+.tu span li b {
+	margin: 0 2em 0 0;
+	display: inline-block;
+}
+
+.tu span li p {
+	float: right;
+}
+.pingjia strong{
+	    float: right;
+    color: #029159;
+}
+
+/*收支明细*/
+
+.record {
+	display: none;
+}
+
+.record p {
+	border-bottom: 1px dotted #e7e7e7;
+	font-size: 12px;
+	width: 100%;
+	color: #868686;
+}
+
+.record p.head {
+	border-bottom: 1px solid #e7e7e7;
+	font-size: 12px;
+	width: 100%;
+	background: #f0f0f0;
+	color: black;
+}
+
+.record p.head b.include {
+	color: #494949;
+}
+
+.record p b {
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	display: inline-block;
+	font-weight: normal;
+}
+
+.record p b.master {
+	width: 14.7%;
+}
+
+.record p b.data {
+	width: 15.5%;
+}
+
+.record p b.need {
+	width: 35%;
+}
+
+.record p b.include {
+	width: 16%;
+	color: #40b98e;
+}
+
+.record p b.payWay {
+	width: 16.7%;
+}
+
+
+/*充值记录*/
+
+.full {
+	display: none;
+}
+
+.full p {
+	border-bottom: 1px dotted #e7e7e7;
+	font-size: 12px;
+	width: 100%;
+	color: #868686;
+}
+
+.full p.head {
+	border-bottom: 1px solid #e7e7e7;
+	font-size: 12px;
+	width: 100%;
+	background: #f0f0f0;
+	color: black;
+}
+
+.full p.head b.include {
+	color: #494949;
+}
+
+.full p b {
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	display: inline-block;
+	font-weight: normal;
+}
+
+.full p b.master {
+	width: 14.7%;
+}
+
+.full p b.data {
+	width: 15.5%;
+}
+
+.full p b.need {
+	width: 35%;
+}
+
+.full p b.include {
+	width: 16%;
+	color: #40b98e;
+}
+
+.record p b.payWay {
+	width: 16.7%;
+}
+
+
+/*提现记录*/
+
+.post {
+	display: none;
+}
+
+.post p {
+	border-bottom: 1px dotted #e7e7e7;
+	font-size: 12px;
+	width: 100%;
+	color: #868686;
+}
+
+.post p.head {
+	border-bottom: 1px solid #e7e7e7;
+	font-size: 12px;
+	width: 100%;
+	background: #f0f0f0;
+	color: black;
+}
+
+.post p.head b.include {
+	color: #494949;
+}
+
+.post p b {
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	display: inline-block;
+	font-weight: normal;
+}
+
+.post p b.data {
+	width: 20%;
+}
+
+.post p b.master {
+	width: 20%;
+}
+
+.post p b.need {
+	width: 37%;
+}
+
+.post p b.include {
+	width: 20%;
+}
+
+
+/*我的收藏*/
+
+.myCollect {
+	display: none;
+}
+
+.myCollect .underWay {
+	padding: 27px 10px;
+	border-bottom: dotted 1px #e5e5e5;
+	border-top: dotted 1px #e5e5e5;
+}
+
+.myCollect .main p {
+	color: #8d8d8d;
+}
+
+.myCollect .underWay span {
+	display: inline-block;
+}
+
+.myCollect .underWay span.shoucang {
+	width: 87px;
+	height: 34px;
+	border-radius: 3px;
+	border: 1px solid #b9b9b9;
+	text-align: center;
+	line-height: 34px;
+	background: #efefef;
+	font-size: 12px;
+	color: #6a6869;
+	float: right;
+	margin-top: 1.3%;
+	cursor: pointer;
+}
+.myCollect li.money p{
+	border-left: solid 1px #8D8D8D;
+	text-indent: 1em;
+}
+.myCollect .money b,
+.myCollect .money p {
+	display: inline-block;
+}
+
+.myCollect .money b {
+	font-size: 20px;
+	color: #01a060;
+	line-height: 40px;
+	height: 40px;
+}
+
+.myCollect .money p {
+	font-size: 14px;
+	line-height: 20px;
+	height: 20px
+}
+
+
+/*案例管理*/
+
+.caseAdmin {
+	display: none;
+}
+
+.caseAdmin>span {
+	display: inline-block;
+	width: 100%;
+	border-bottom: 1px dotted #d9d9d9;
+}
+
+.caseAdmin>span b {
+	display: inline-block;
+}
+
+.caseAdmin>span b:first-child {
+	font-size: 20px;
+	line-height: 77px;
+	color: #00a060;
+}
+
+.caseAdmin>span b:last-child {
+	float: right;
+	width: 75px;
+	height: 28px;
+	background: #00a060;
+	color: white;
+	font-size: 12px;
+	line-height: 28px;
+	text-align: center;
+	border-radius: 2px;
+	margin: 2.1em 0 0 0;
+	cursor: pointer;
+}
+
+.caseAdmin p {
+	border-bottom: 1px dotted #e7e7e7;
+	font-size: 12px;
+	width: 100%;
+	color: #868686;
+}
+
+.caseAdmin p.head {
+	border-bottom: 1px solid #e7e7e7;
+	font-size: 12px;
+	width: 100%;
+	background: #f0f0f0;
+	color: black;
+}
+
+.caseAdmin p.head b.include {
+	color: #494949;
+}
+
+.caseAdmin p b {
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	display: inline-block;
+	font-weight: normal;
+}
+
+.caseAdmin p b.master {
+	width: 14.7%;
+}
+
+.caseAdmin p b.data,
+.caseAdmin p img.data {
+	width: 15.5%;
+}
+
+.caseAdmin p img.data {
+	width: ;
+}
+
+.caseAdmin p b.need {
+	width: 35%;
+}
+
+.caseAdmin p b.include {
+	width: 16%;
+	color: #40b98e;
+}
+
+.caseAdmin p.main b.include {
+	cursor: pointer;
+}
+
+.caseAdmin p b.payWay {
+	width: 16.7%;
+}
+
+.caseAdmin p.delete {
+	border-bottom: 1px solid #e7e7e7;
+	font-size: 12px;
+	width: 100%;
+	background: #f0f0f0;
+	color: black;
+}
+
+.caseAdmin p.delete b.master {
+	width: 14.7%;
+}
+
+.caseAdmin p.delete b.data {
+	width: 3%;
+}
+
+.caseAdmin p.delete b.need {
+	width: 11%;
+}
+
+
+/*添加案例*/
+
+.addCase {
+	display: none;
+}
+
+.addCase input.submit {
+	width: 75px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	background: #01a161;
+	color: white;
+	border-radius: 3px;
+	border: none;
+	margin: 4% 0 0 8.8%;
+	text-indent: 0;
+}
+
+.addCase .form ul {
+	margin: 15px 0 0 0;
+}
+
+.addCase .form ul li {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 1.8em;
+	margin-right: 16px;
+}
+
+.addCase .form ul input {
+	width: 346px;
+	height: 44px;
+	border-radius: 3px;
+	border: #008000 solid 1px;
+	margin: 0 0 0 -0.5%;
+}
+
+.addCase .form ul textarea {
+	width: 522px;
+	height: 102px;
+	border-radius: 3px;
+	border: #008000 solid 1px;
+}
+
+.titlePage {
+	overflow: hidden;
+}
+
+.titlePage span,
+.titlePage li {
+	float: left;
+}
+
+.titlePage span img,
+.titlePage span li {
+	float: left;
+}
+
+.titlePage span li {
+	padding: 0 0 0 16px;
+}
+
+.titlePage span li p {
+	display: inline-block;
+	width: 75px;
+	height: 28px;
+	text-align: center;
+	line-height: 30px;
+	background: #efefef;
+	color: #a1a1a1;
+	border: 1px solid #c9c9c9;
+	border-radius: 2px;
+	font-size: 12px;
+}
+
+.titlePage span li b {
+	display: block;
+	line-height: 45px;
+	color: #a1a1a1;
+	font-size: 12px;
+}
+
+.plan {
+	overflow: hidden;
+}
+
+.plan li,
+.plan textarea {
+	float: left;
+}
+
+.picture {
+	overflow: hidden;
+}
+
+.picture li,
+.picture span {
+	float: left;
+}
+
+.picture span {
+	width: 60%;
+}
+
+.picture span img {
+	margin-right: 2%;
+}
+
+.picture span p {
+	line-height: 1.5em;
+}
+
+.picture span p.add {
+	width: 75px;
+	height: 28px;
+	text-align: center;
+	line-height: 30px;
+	background: #efefef;
+	color: #a1a1a1;
+	border: 1px solid #c9c9c9;
+	border-radius: 2px;
+	font-size: 12px;
+	margin: 1% 0 0 0;
+}
+
+
+/*修改案例*/
+
+.repairCase {
+	display: none;
+}
+
+.repairCase input.submit {
+	width: 75px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	background: #01a161;
+	color: white;
+	border-radius: 3px;
+	border: none;
+	margin: 4% 0 0 8.8%;
+	text-indent: 0;
+}
+
+.repairCase .form ul {
+	margin: 15px 0 0 0;
+}
+
+.repairCase .form ul li {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 1.8em;
+	margin-right: 16px;
+}
+
+.repairCase .form ul input {
+	width: 346px;
+	height: 44px;
+	border-radius: 3px;
+	border: #008000 solid 1px;
+	margin: 0 0 0 -0.5%;
+}
+
+.repairCase .form ul textarea {
+	width: 522px;
+	height: 102px;
+	border-radius: 3px;
+	border: #008000 solid 1px;
+}
+
+.repairCase .titlePage {
+	overflow: hidden;
+}
+
+.repairCase .titlePage span,
+.titlePage li {
+	float: left;
+}
+
+.repairCase .titlePage span img,
+.repairCase .titlePage span li {
+	float: left;
+}
+
+.repairCase .titlePage span li {
+	padding: 0 0 0 16px;
+}
+
+.repairCase .titlePage span li p {
+	display: inline-block;
+	width: 75px;
+	height: 28px;
+	text-align: center;
+	line-height: 30px;
+	background: #efefef;
+	color: #a1a1a1;
+	border: 1px solid #c9c9c9;
+	border-radius: 2px;
+	font-size: 12px;
+}
+
+.repairCase .titlePage span li b {
+	display: block;
+	line-height: 45px;
+	color: #a1a1a1;
+	font-size: 12px;
+}
+
+.repairCase .plan {
+	overflow: hidden;
+}
+
+.repairCase .plan li,
+.repairCase .plan textarea {
+	float: left;
+}
+
+.repairCase .picture {
+	overflow: hidden;
+}
+
+.repairCase .picture li,
+.repairCase .picture span {
+	float: left;
+}
+
+.repairCase .picture span {
+	width: 60%;
+}
+
+.repairCase .picture span img {
+	margin-right: 2%;
+}
+
+.repairCase .picture span p {
+	line-height: 1.5em;
+}
+
+.repairCase .picture span p.add {
+	width: 75px;
+	height: 28px;
+	text-align: center;
+	line-height: 30px;
+	background: #efefef;
+	color: #a1a1a1;
+	border: 1px solid #c9c9c9;
+	border-radius: 2px;
+	font-size: 12px;
+	margin: 1% 0 0 0;
+}
+
+
+/*自动评价*/
+
+.autoAssess {
+	display: none;
+}
+
+.autoAssess form input.submit {
+	width: 75px;
+	height: 29px;
+	background: #01a060;
+	border-radius: 2px;
+	display: inline-block;
+	border: none;
+	margin: 9%;
+	text-indent: 0;
+	color: white;
+}
+
+.autoAssess form ul {
+	display: inline-block;
+	line-height: 56px;
+	width: 100%;
+}
+
+.autoAssess ul.pingjia {
+	overflow: hidden;
+}
+
+.autoAssess ul.pingjia p,
+.autoAssess textarea {
+	float: left;
+}
+
+.autoAssess textarea {
+	width: 577px;
+	height: 157px;
+}
+
+
+/*退款管理*/
+
+.backMoney {
+	display: none;
+}
+
+.backMoney p {
+	border-bottom: 1px dotted #e7e7e7;
+	font-size: 12px;
+	width: 100%;
+	color: #868686;
+}
+
+.backMoney p.head {
+	border-bottom: 1px solid #e7e7e7;
+	font-size: 12px;
+	width: 100%;
+	background: #f0f0f0;
+	color: black;
+}
+
+.backMoney p.head b.need,
+.backMoney p.head b.returnM {
+	color: #494949;
+}
+
+.backMoney p b {
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	display: inline-block;
+	font-weight: normal;
+}
+
+.backMoney p b.master {
+	width: 11.7%;
+}
+
+.backMoney p b.need {
+	width: 14.7%;
+	color: #40b98e;
+}
+
+.backMoney p b.employer {
+	width: 16%;
+}
+
+.backMoney p b.include {
+	width: 12%;
+}
+
+.backMoney p b.returnM {
+	width: 14.2%;
+	color: #40b98e;
+}
+
+.backMoney p b.data {
+	width: 13%;
+}
+
+.backMoney p b.returnS {
+	width: 13%;
+}
+
+
+/*我的举报*/
+
+.reportAdmin {
+	display: none;
+}
+
+.reportAdmin ul {
+	border-bottom: solid 1px #dddddd;
+	margin-bottom: 10px;
+}
+
+.reportAdmin ul li {
+	display: inline-block;
+	width: 150px;
+	height: 55px;
+	background: white;
+	border-radius: 2px 2px 0 0;
+	border: solid 1px #dddddd;
+	text-align: center;
+	line-height: 55px;
+	position: relative;
+	top: 1px;
+}
+
+.reportAdmin ul li.active {
+	border-bottom: solid 1px white;
+}
+
+.reportAdmin p {
+	border-bottom: 1px dotted #e7e7e7;
+	font-size: 12px;
+	width: 100%;
+	color: #868686;
+}
+
+.reportAdmin p.head {
+	border-bottom: 1px solid #e7e7e7;
+	font-size: 12px;
+	width: 100%;
+	background: #f0f0f0;
+	color: black;
+}
+
+.reportAdmin p.head b.need,
+.reportAdmin p.head b.returnM {
+	color: #494949;
+}
+
+.reportAdmin p b {
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	display: inline-block;
+	font-weight: normal;
+}
+
+.reportAdmin p b.master {
+	width: 19.7%;
+}
+
+.reportAdmin p b.need {
+	width: 17.7%;
+	color: #40b98e;
+}
+
+.reportAdmin p b.employer {
+	width: 19%;
+}
+
+.reportAdmin p b.include {
+	width: 12%;
+}
+
+.reportAdmin p b.data {
+	width: 18%;
+}
+
+.reportAdmin p b.returnS {
+	width: 20%;
+}

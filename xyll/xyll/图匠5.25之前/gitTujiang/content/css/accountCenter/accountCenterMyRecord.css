@@ -1,0 +1,49 @@
+/*收支明细*/
+
+.record ul {
+	border-bottom: 1px dotted #e7e7e7;
+	font-size: 12px;
+	width: 100%;
+	color: #868686;
+}
+
+.record ul.head {
+	border-bottom: 1px solid #e7e7e7;
+	font-size: 12px;
+	width: 100%;
+	background: #f0f0f0;
+	color: black;
+}
+
+.record ul.head li.include {
+	color: #494949;
+}
+
+.record ul li {
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	display: inline-block;
+	font-weight: normal;
+}
+
+.record ul li.master {
+	width: 40%;
+}
+
+.record ul li.data {
+	width: 20%;
+}
+
+/*.record ul li.need {
+	width: 35%;
+}*/
+
+.record ul li.include {
+	width: 15%;
+	color: #40li98e;
+}
+
+.record ul li.payWay {
+	width: 20%;
+}

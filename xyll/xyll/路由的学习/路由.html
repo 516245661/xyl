@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>路由学习</title>
+		<!--<script type="text/javascript" src="internet_router.js"></script>-->
+		<script type="text/javascript" src="internet.js"></script>
+		<script type="text/javascript" src="vue.js"></script>
+	</head>
+	<style type="text/css">
+		.v-link-active {
+			color: red;
+		}
+	</style>
+
+	<body>
+		<div id="app">
+			<h1>Hello App!</h1>
+			<p>
+				<a v-link="{ path: '/foo' }">Go to Foo</a>
+				<a v-link="{ path: '/bar' }">Go to Bar</a>
+			</p>
+			<router-view></router-view>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript">
+	var Foo = Vue.extend({
+		template: '<p>This is foo!</p>'
+	})
+	var Bar = Vue.extend({
+		template: '<p>This is bar!</p>'
+	})
+	var App = Vue.extend({})
+	var router = new VueRouter()
+	router.map({
+		'/foo': {
+			component: Foo
+		},
+		'/bar': {
+			component: Bar
+		}
+	})
+	router.start(App, '#app')
+</script>

@@ -1,0 +1,72 @@
+#issue{
+	background: #efefef;
+}
+.issue{
+	width: 1200px; margin: 0 auto; overflow: hidden; background: white;
+}
+.rightMain{
+	padding: 42px 0 0 44px; width: 941px; 
+}
+.rightMain ul{
+	font-size: 14px; color: #222222;
+}
+.rightMain input,.rightMain select{
+	border: 1px solid #cacaca; border-radius: 3px;
+}
+.rightMain .headLi input{
+	width: 466px; height: 45px; margin: 0 0 0 1.7em;
+}
+.rightMain .descript{
+	margin: 20px 0 0 0; overflow: hidden;
+}
+.rightMain .descript textarea,.rightMain .descript b{
+	float: left;
+}
+.rightMain .descript textarea{
+	border: 1px solid #cacaca; border-radius: 3px;width: 466px; height: 105px; display: block; margin: 0 0 0 2.1em;
+}
+.rightMain .descript p{
+	line-height: 5.5em;
+}
+.rightMain .descript div,.rightMain .descript p{
+	float: left; margin: 0 0 0 1em;
+}
+.rightMain .descript div{
+	text-align: center; line-height: 34px; border: 1px solid gray; border-radius: 3px; width: 97px; height: 34px; 
+	background: #efefef; clear: left; margin: 1.5em 0 0 5.2em;
+}
+.rightMain .style,.rightMain .numImg,.rightMain .price,.rightMain .hike{
+	margin: 1.4em 0 0 0;
+}
+.rightMain .style select,.rightMain .numImg input,.rightMain .price input,.rightMain .hike input{
+	width: 199px; height: 45px;
+}
+.rightMain .price .urgent{
+	width: 14px; height: 14px; border-radius: 100%; margin: 0 0 0 0.9em;
+}
+.rightMain .style{
+	clear: both;
+}
+.rightMain .style select{
+	margin: 0 0 0 2em;
+}
+.price input{
+	margin: 0 1em 0 0;
+}
+.rightMain #next{
+	width: 142px; height: 43px; background: #01a161; text-align: center; line-height: 43px; text-indent: 0; color: white;
+	margin: 2em 0 0 5.6em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

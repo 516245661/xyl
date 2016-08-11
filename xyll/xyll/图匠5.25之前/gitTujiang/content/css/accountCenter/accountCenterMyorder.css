@@ -1,0 +1,91 @@
+.order_con {
+	float: left;
+	width: 100%;
+}
+
+.order_con ul {
+	width: 100%;
+	height: 125px;
+	line-height: 125px;
+	border-bottom: 1px solid #EDEDED;
+}
+
+.order_con ul span {
+	color: #6ECDAA;
+}
+
+.order_con ul .li_1 {
+	padding-top: 15px;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+
+.order_con ul .li_2 {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
+
+.order_con .li_2 span {
+	float: right;
+	font-size: 12px;
+}
+
+.order_con b {
+	font-size: 16px;
+	color: #6A6969;
+	margin-left: 20px;
+	padding-left: 20px;
+	border-left: 1px solid #D6D6D6;
+	cursor: pointer;
+}
+
+.order_con em {
+	font-size: 13px;
+	color: #A4A4A4;
+	width: 80%;
+	overflow: hidden;
+	white-space: nowrap;
+	float: left;
+	text-overflow: ellipsis;
+}
+
+.orderInfo {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background: rgb(239, 239, 241);
+}
+
+.orderInfo span {
+	float: left;
+	padding-left: 40px;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.orderInfo span em {
+	color: #4A89DC;
+}
+
+.publishNeed {
+	text-align: center;
+	padding: 20px;
+	float: left;
+	width: 100%;
+}
+
+.publishNeed button {
+	height: 55px;
+	width: 210px;
+	font-size: 19px;
+	color: white;
+	background: #00A364;
+	border: 1px solid;
+	border-radius: 5px;
+}
+
+.publishNeed button a {
+	color: white;
+}

@@ -1,0 +1,52 @@
+form {
+	padding: 60px 0 60px 85px;
+	font-size: 18px;
+}
+
+form>input {
+	padding: 10px 16px;
+	font-size: 16px;
+	border-radius: 6px;
+	background: white;
+}
+
+input.button {
+	background: #4B89DC;
+	color: white;
+	margin-left: 30%;
+}
+
+input {
+	text-indent: 0;
+}
+
+li input {
+	height: 49px;
+	border-radius: 4px;
+	text-indent: 0.5em;
+}
+
+form input.bankCard {
+	width: 520px;
+}
+
+em {
+	font-style: normal;
+	width: 130px;
+	text-align: right;
+	display: inline-block;
+}
+
+b.number {
+	font-size: 24px;
+	color: red;
+}
+
+#makeMoney li {
+	padding: 26px 0;
+}
+
+#content {
+	background: #EEEEEE;
+	padding: 70px 0 100px 0;
+}

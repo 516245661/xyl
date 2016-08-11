@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		.end {
+			position: relative;
+			right: 0;
+			top: 0;
+			float: right;
+		}
+		
+		.star {
+			width: 10px;
+			height: 10px;
+			background: red;
+			position: absolute;
+			bottom: 0;
+			animation-name: myfirst;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-delay: 0;
+			animation-iteration-count: 1;
+			animation-direction: alternate;
+			animation-play-state: running;
+		}
+		
+		@keyframes myfirst {
+			0% {
+				background: red;
+				right: 200px;
+				bottom: 0%;
+			}
+			10% {
+				background: red;
+				right: 180px;
+				bottom: 15%;
+			}
+			20% {
+				background: red;
+				right: 160px;
+				bottom: 30%;
+			}
+			30% {
+				background: red;
+				right: 140px;
+				bottom:45%;
+			}
+			40% {
+				background: red;
+				right: 130px;
+				bottom: 60%;
+			}
+			50% {
+				background: red;
+				right: 100px;
+				bottom: 70%;
+			}
+			60% {
+				background: red;
+				right: 70px;
+				bottom:80%;
+			}
+			70% {
+				background: red;
+				right: 40px;
+				bottom: 90%;
+			}
+			80% {
+				background: red;
+				right: 10px;
+				bottom: 93%;
+			}
+			90% {
+				background: red;
+				right: 10px;
+				bottom: 96%;
+			}
+			100% {
+				background: red;
+				right: 0;
+				bottom: 100%;
+			}
+		}
+	</style>
+
+	<body>
+		<div class="end">
+			这里是终点
+		</div>
+		<div class="star">
+			我要去终点
+		</div>
+	</body>
+
+</html>

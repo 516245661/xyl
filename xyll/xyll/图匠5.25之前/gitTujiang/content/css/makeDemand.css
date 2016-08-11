@@ -1,0 +1,142 @@
+#makeDem {
+	background: #f4f4f4;
+	display: block;
+}
+em{
+	font-style: normal; display: block;
+}
+.makeDem {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 125px 0 50px 0;
+}
+
+.makeDem p {
+	padding-left: 15%;
+	font-size: 17px;
+	margin-top: 20px;
+}
+
+.makeDem strong {
+	font-weight: normal;
+}
+.makeDem p.img{
+	margin-bottom:80px;
+}
+.makeDem input.title {
+	width: 158px;
+	height: 30px;
+}
+
+.makeDem p.description {
+	overflow: hidden;
+}
+
+.makeDem p.description b,
+.makeDem p.description textarea {
+	float: left;
+}
+
+.makeDem p.description textarea {
+	width: 480px;
+	height: 105px;
+	font-weight: 100;
+}
+.makeDem p.number b.danjia{
+	margin-left: 50px; 
+}
+.makeDem p.upper b {
+	width: 130px;
+	height: 32px;
+	display: inline-block;
+	text-align: center;
+	line-height: 32px;
+	background: #c9c9c9;
+}
+.makeDem input.number{
+	margin: 0 0 0 -4px;
+}
+.makeDem input.number,
+.makeDem input.price {
+	width: 108px;
+	height: 30px;
+}
+
+.makeDem input.price {
+	margin-right: 5.5%;
+}
+
+.makeDem p.price em{
+	font-size: 12px;
+	font-style: normal;
+	color: red;
+	display: block;
+	margin: 0 0 0 22%;
+}
+.makeDem p.demand {
+	overflow: hidden;
+}
+
+.makeDem p.demand strong,
+.makeDem p.demand b {
+	float: left;
+}
+.demand strong{
+	cursor: pointer;
+}
+.makeDem p.demand strong.training {
+	width: 108px;
+	height: 30px;
+	background: #00a263;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+	margin-right: 2%;
+	border: 1px solid #00a263;
+}
+
+.makeDem p.demand strong.composition {
+	width: 106px;
+	height: 28px;
+	background: white;
+	border: 1px solid #00a263;
+	text-align: center;
+	line-height: 30px;
+}
+.makeDem p.style{
+	overflow: hidden;
+}
+.makeDem p.style b{
+	float: left;
+}
+.makeDem p.style em{
+	clear: both; color: red; font-size: 12px; padding:1% 0 0 5%;
+}
+.makeDem p.style strong {
+	cursor: pointer; width: 77px; height: 28px; border: solid 1px #00a263; margin-right: 5px; font-size: 16px; 
+	float: left; text-align: center; line-height: 30px;
+}
+.makeDem p.style strong.active {
+	background: #00a263; color: white;
+}
+.makeDem p.sort b {
+	margin-right: 2%;
+}
+
+.makeDem p.perfection {
+	text-align: center;
+	margin-top: 50px;
+	padding-left: 0;
+}
+
+.makeDem p.perfection b {
+	text-align: center;
+	width: 153px;
+	height: 40px;
+	background: #00a263;
+	color: white;
+	line-height: 40px;
+	display: inline-block;
+	font-size: 17px;
+	cursor: pointer;
+}

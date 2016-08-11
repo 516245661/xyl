@@ -1,0 +1,244 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: arial, helvetica, "微软雅黑", "黑体";
+	-webkit-box-sizing: initial;
+}
+
+li {
+	list-style: none;
+}
+
+ol,
+ul {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+p {
+	margin: 0;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#topNavSlip {
+	background: #f1f1f1;
+}
+
+.topNavSlip {
+	width: 1200px;
+	height: 47px;
+	margin: 0 auto;
+	color: #565656;
+	font-size: 12px;
+	line-height: 47px;
+}
+
+.topNavSlip span.welcome {
+	float: left;
+}
+
+.topNavSlip span.main {
+	float: right;
+	margin: 0;
+}
+
+.topNavSlip span.main ul {
+	padding: 0 16px;
+	float: left;
+	cursor: pointer;
+}
+
+.topNavSlip span.main ul.active1 {
+	background: url(../img/icon1.png) no-repeat 71px 20px;
+	padding-right: 2.7em;
+	position: relative;
+}
+
+.topNavSlip span.main ul.active1 li.first,
+.topNavSlip span.main ul.active1 li.last,
+.topNavSlip span.main ul.active2 li.second,
+.topNavSlip span.main ul.active2 li.first,
+.topNavSlip span.main ul.active2 li.last {
+	position: absolute;
+	left: 12px;
+	background: gainsboro;
+	height: 20px;
+	line-height: 20px;
+	width: 70px;
+}
+
+.topNavSlip span.main ul.active1 li:hover {
+	background: #A7E6CE;
+}
+
+.topNavSlip span.main ul.active2 li:hover {
+	background: #A7E6CE;
+}
+
+.topNavSlip span.main ul.active1 li.first,
+.topNavSlip span.main ul.active2 li.first {
+	top: 34px;
+}
+
+.topNavSlip span.main ul.active1 li.last,
+.topNavSlip span.main ul.active2 li.last {
+	top: 54px;
+}
+
+.topNavSlip span.main ul.active2 li.second {
+	top: 74px;
+}
+
+.topNavSlip span.main ul.active2 {
+	background: url(../img/icon1.png) no-repeat 84px 20px;
+	padding-right: 2.7em;
+	position: relative;
+}
+
+.topNavSlip span.main ul.active3 {
+	-background: url(../img/icon1.png) no-repeat -43px 17px;
+	padding-right: 2.7em;
+	position: relative;
+}
+.topNavSlip span.main ul li.nickName:hover>ul{
+	display: block;
+}
+.topNavSlip span.main ul li.nickName>ul{
+	position: absolute; padding: 0; background: white; width: 64%; display: none;
+}
+li.nickName ul li{
+	height: 20px; line-height: 20px; text-align: left;
+}
+li.nickName ul li:hover{
+	background: #eff3f5;
+}
+.topNavSlip span.main ul li {
+	text-align: center;
+	cursor: pointer;
+	min-width: 60px;
+}
+
+
+/*顶部导航条*/
+
+#topNav {
+	background: white;
+}
+
+.topNav {
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	line-height: 100px;
+	height: 104px;
+}
+
+.topNav img {
+	float: left;
+	margin-top: 28px;
+}
+
+.topNav ul {
+	float: right;
+}
+
+.topNav ul li {
+	font-size: 16px;
+	color: black;
+	display: inline-block;
+	margin: 0 35px;
+	height: 100px;
+}
+
+.topNav ul li.last {
+	margin: 0 10px 0 35px;
+}
+
+.topNav ul li:hover {
+	border-bottom: solid 4px #08a160;
+	color: #08a160;
+}
+
+.topNav ul li a:hover {
+	color: #08a160;
+}
+
+
+/*footer*/
+
+footer {
+	overflow: hidden;
+	padding-bottom: 2em;
+	background: #efefef;
+	padding: 2% 0 2% 0;
+}
+
+.footer {
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+footer b {
+	font-size: 16px;
+	color: #333333;
+	display: block;
+	padding: 0 0 1em 0;
+	margin: 2em 0 0 0;
+}
+
+footer ul {
+	overflow: hidden;
+	width: 220px;
+	float: left;
+}
+
+footer li {
+	float: left;
+	margin: 0 2em 0 0;
+}
+
+footer li a {
+	font-size: 11px;
+	color: #9e9e9e;
+	line-height: 24px;
+}
+
+footer ul.yard {
+	width: 261px;
+	margin: 0 0 0 3.7em;
+}
+
+footer ul.yard h5 {
+	float: left;
+	color: #9d9d9d;
+}
+
+footer .yard .ios {
+	margin: 0.8em 0 0 1em;
+}
+
+footer .yard .Android {
+	margin: 0.8em 0 0 2em;
+}

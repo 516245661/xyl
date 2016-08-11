@@ -1,0 +1,122 @@
+#iconSe {
+	background: #f4f4f4;
+}
+
+.iconSe {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 18px;
+	color: #3ec1e2;
+	padding: 4em 0 0 0;
+}
+
+.iconSe p {
+	display: block;
+	margin: 3% 0 0 0;
+	font-weight: 400;
+	color: #00a263;
+}
+
+.iconSe p b {
+	color: #c9c9c9;
+	text-indent: 2em;
+	display: inline-block;
+	font-weight: 400;
+}
+
+.payMoney {
+	width: 1200px;
+	margin: 0 auto;
+	font-size: 18px;
+	padding: 2% 0 2% 0;
+}
+
+.payMoney p {
+	color: #8e8e8e;
+	margin: 2% 0 0 0;
+}
+
+.payMoney p.yingfu b {
+	color: red;
+}
+
+.payMoney p.way b {
+	width: 97px;
+	height: 32px;
+	margin-right: 2px;
+	border: solid 1px #00a263;
+	display: inline-block;
+	text-align: center;
+	line-height: 34px;
+	cursor: pointer;
+}
+
+.payMoney p.way b.active {
+	background: #00a263;
+	color: white;
+}
+
+.payMoney div {
+	width: 930px;
+	border: solid 1px #00a263;
+	margin: 0 0 0 6.9%;
+	position: relative;
+	top: -1px;
+	padding: 60px 0 20px 0;
+}
+
+.payMoney div span {
+	cursor: pointer;
+}
+
+.payMoney div.joyful {
+	display: block;
+}
+
+.payMoney div.joyful span {
+	width: 164px;
+	height: 43px;
+	display: inline-block;
+	text-align: center;
+	line-height: 43px;
+	margin: 0 20px 50px 49px;
+}
+
+.payMoney div.joyful span.active {
+	border: solid 2px #00a263;
+}
+
+.payMoney div p {
+	width: 100%;
+	text-align: center;
+	display: block;
+}
+
+.payMoney div b {
+	width: 167px;
+	height: 31px;
+	text-align: center;
+	line-height: 31px;
+	background: #00a263;
+	color: white;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.payMoney div.silver {
+	display: none;
+}
+
+.payMoney div.silver span {
+	width: 308px;
+	height: 52px;
+	text-align: center;
+	line-height: 52px;
+	display: inline-block;
+	margin: 0 0 28px 10%;
+}
+
+.payMoney div.silver span.active {
+	border: solid 2px #00a263;
+}

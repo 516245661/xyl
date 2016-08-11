@@ -1,0 +1,82 @@
+<link rel="stylesheet" type="text/css" href="css/epSetshop.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 900px)" href="css/epSetshopPhone.css" />
+<script src="widget/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+<script src="widget/messages_zh.js" type="text/javascript" charset="utf-8"></script>
+<script src="widget/upfile.js" type="text/javascript" charset="utf-8"></script>
+<div id="epSetshop">
+	<div class="contShop">
+		<form action="" id="signupForm" method="post">
+			<div class="wdxx">
+				<h5>我的信息</h5>
+				<div class="formInput">
+					<span>用户名</span><input type="text" name="username" placeholder="图匠宜家" v-model="myselfInfoData.nickName" />
+				</div>
+				<div class="formInput">
+					<span>联系电话</span><input type="text" id="telphone" name="telphone" maxlength="11" v-model="myselfInfoData.phone" />
+					<label class="yztelphone" style="display: none;">请输入正确的电话号码格式</label>
+				</div>
+				<div class="formInput">
+					<span>头像</span>
+					<div class="headImg zuijin">
+						<img v-bind:src="myselfInfoData.headImg" alt="头像" />
+					</div>
+					<em class="btn_bgb_bn_fcw_n">上传<input type="file"  style="width: 50px;" class="headFile" v-on:change="upload"/></em>
+				</div>
+				<div class="formInput">
+					<div class="padding">
+						<span class="pc">所在地</span>
+						<span class="phone">省</span>
+						<select class="select1" v-model="myselfInfoData.proviceName">
+							<option selected="selected">{{myselfInfoData.proviceName}}</option>
+							<option v-for="provshen in provshen" data-proid="{{provshen.id}}">{{provshen.fullname}}</option>
+						</select>
+					</div>
+					<div class="padding">
+						<span class="phone">市</span>
+						<select class="select2" v-model="myselfInfoData.areaName">
+							<option selected="selected">{{myselfInfoData.areaName}}</option>
+							<option  v-for="cityshi in cityshi"  data-citid="{{cityshi.id}}">{{cityshi.fullname}}</option>
+						</select>
+					</div>
+					<div class="padding">
+						<span class="phone">县</span>
+						<select class="select3" v-model="myselfInfoData.cityName">
+							<option selected="selected">{{myselfInfoData.cityName}}</option>
+							<option v-for="areaxian in areaxian" data-areid="{{areaxian.id}}">{{areaxian.fullname}}</option>
+						</select>
+					</div>
+				</div>
+				<div class="formInput">
+					<span>详细地址</span><input type="text" name="address" v-model="myselfInfoData.address" />
+				</div>
+			</div>
+			<div class="wdxx">
+				<h5>实名认证</h5>
+				<div class="formInput">
+					<span>公司名称</span><input type="text" name="nameGs" v-model="myselfInfoData.companyName" />
+				</div>
+				<div class="formInput">
+					<span>法人姓名</span><input type="text" name="frname" v-model="myselfInfoData.legalPersonName" />
+				</div>
+				<div class="formInput yingyezhizhao">
+					<span>营业执照</span>
+					<div class="nameImg zuijin">
+						<img v-bind:src="myselfInfoData.authPath" alt="请上传营业执照" />
+					</div>
+					<em class="btn_bgb_bn_fcw_n  nameUp">上传<input type="file" style="width: 100%;" class="nameFlie" v-on:change="upload"/></em>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="sureUp">
+		<span class="btn_bgb_bn_fcw_n surebaocun" v-on:click="upsure">提交修改</span>
+	</div>
+	<!--帮助-->
+	<div class="help">
+		<div class="helpCon">
+			<h2>帮助中心</h2>
+			<h4>1.<a href="http://tjbbs-tjbbs.daoapp.io/?p=20" target="view_window">店铺设置</a></h4>
+		</div>
+	</div>
+</div>
+<script src="js/epSetshop.js" type="text/javascript" charset="utf-8" defer="defer"></script>
