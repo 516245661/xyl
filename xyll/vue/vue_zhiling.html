@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>指令简单demo</title>
+		<!--<script src="../lib/js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="../lib/js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style type="text/css">
+		div {
+			padding: 10px;
+		}
+	</style>
+
+	<body>
+		<div id="vue_zhiling">
+			<h1>内部指令</h1>
+			<!--  v-text  -->
+			<div v-text="vText"></div>
+			<div>{{vText}}</div>
+			<!-- v-html -->
+			<div v-html="html"></div>
+			<!--v-if v-show v-else -->
+			<select v-model="vIf">
+				<option value="true">true</option>
+				<option value="false">false</option>
+			</select>
+			<template v-if="vIf == 'true' ">这里v-if是true</template>
+			<template v-else>这里v-if是false 我必须在v-if后面</template>
+			<div v-show="vShow == 'true' ">这里是v-show <pre> &lt;template&gt;&lt;/template&gt; 不适用我 'v-show' 我是根据v-show的真假来改变元素 的display的属性值</pre> </div>
+			<!-- v-for -->
+			<div>
+				<ol>
+					<li v-for="vFors in vFor">{{vFors.xx}}</li><br />
+					<li v-for="(index, vFors) in vFor">{{index}}{{vFors.xx}}</li>
+					<!--<li v-for="(key, vFors) in vFor">{{key}}{{vFors.xx}}</li>-->
+				</ol>
+			</div>
+			<!-- v-bind -->
+			<div class="sss" :class="{'book':isred}">
+				class
+			</div>
+			<div :class="[classA, classB]">
+				class
+			</div>
+			<h1>自定义指令</h1>
+			<p>自定义指令提供一种机制将数据的变化映射为 DOM 行为。</p>
+			<p>Vue.directive(id, definition)方法注册一个全局自定义指令，它接收两个参数指令 ID 与定义对象</p>
+			<p>组件的 directives 选项注册一个局部自定义指令。</p>
+			<p>bind：只调用一次，在指令第一次绑定到元素上时调用。</p>
+			<p>update： 在 bind 之后立即以初始值为参数第一次调用，之后每当绑定值变化时调用，参数为新值与旧值。</p>
+			<p>unbind：只调用一次，在指令从元素上解绑时调用。</p>
+			<pre>
+				Vue.directive('my-directive', {
+				  bind: function () {
+				    // 准备工作
+				    // 例如，添加事件处理器或只需要运行一次的高耗任务
+				  },
+				  update: function (newValue, oldValue) {
+				    // 值更新时的工作
+				    // 也会以初始值为参数调用一次
+				  },
+				  unbind: function () {
+				    // 清理工作
+				    // 例如，删除 bind() 添加的事件监听器
+				  }
+				})
+			</pre>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+
+		</div>
+	</body>
+
+</html>
+<script src="vue_zhiling.js" type="text/javascript" charset="utf-8"></script>
