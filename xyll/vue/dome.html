@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>指令</title>
+		<script src="vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div id="demod">
+			<h1>第一个</h1>
+			<p>定义一个 directive 只需要3个函数：bind(), update(), unbind()。<br/> 这三个函数分别在 directive 和元素被绑定、对应的数据发生变化 ，以及解除绑定的时候被调用，而且
+				<strong>都是可选的</strong></p>
+			<p>使用 Vue.directive(id, definition) 的方法传入指令 <strong>id</strong> 和 <strong>定义对象</strong> 来注册一个全局自定义指令</p>
+				
+			<h4>列子:</h4>
+			<pre>
+	Vue.directive('disable', {
+	    // 每当绑定的数据变化时，这个函数就被调用
+	    update: function (value) {
+	         // 这里的 this 指向一个directive对象。
+	         // this.el 指向当前被绑定的DOM元素
+	         // value则是所绑定数据的新值
+	         this.el.disabled = !!value
+	    }
+	})
+		</pre>
+			<p>假如只需要 update() 这一个函数的话，我们可以省略外面那个对象，直接提供一个函数：</p>
+			<pre>
+			这里在定义指令
+			
+			
+	Vue.directive('disable', function (value) {
+		this.el.disabled = !!value
+	})
+		</pre>
+			<pre>
+			这里是html代码
+	&lt;div id="demo"&gt;
+	    &lt;button v-disable="disabled"&gt;
+	        {{disabled ? 'Disabled' : 'Submit'}}
+	   &lt;/button&gt;
+	&lt;/div&gt;
+		</pre>
+			<pre>
+			这里给定义的指令复制，
+	var demo = new Vue({
+	    el: '#demo',
+	    data: {
+	        disabled: false
+	    }
+	})
+		</pre>
+------------------------------------------------------- 	<br />
+			<button v-disable="disabled">
+		        {{disabled ? 'Disabled' : 'Submit'}}
+		    </button>
+			<button v-on="click:disabled = !disabled">toggle</button>
+			<input type="text" name="change" id="change" v-model="change" />
+		<h1>第二个</h1>
+		
+		<p> 
+		bind： 仅调用一次，当指令第一次绑定元素的时候。<br />
+		update： 第一次是紧跟在 bind 之后调用，获得的参数是绑定的初始值；以后每当绑定的值发生变化就会被调用，获得新值与旧值两个参数。<br />
+		unbind：仅调用一次，当指令解绑元素的时候。<br />
+		</p>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript">
+	Vue.directive('disable', function(value) {
+		this.el.disabled = !!value
+	})
+	var change = document.getElementById('change').value
+	var demo = new Vue({
+		el: '#demod',
+		data: {
+			disabled: false,
+			change: false,
+		},
+		watch: {
+			"change": function(val, oldval) {
+				this.disabled = val;
+			}
+		}
+
+	})
+</script>
