@@ -57,7 +57,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	new _vue2.default({
-	    el: '#musicCustom',
+	    el: '#customComponentToPc',
 	    components: {
 	        App: _app2.default
 	    },

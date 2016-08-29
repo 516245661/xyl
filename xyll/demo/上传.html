@@ -1,0 +1,74 @@
+<HTML>
+
+	<HEAD>
+		<TITLE>上传文件</TITLE>
+		<meta charset="UTF-8">
+		<SCRIPT language='javascript' type='text/javascript'>
+			var RES_BT_DELETE = "删除";
+			var isIE = (navigator.userAgent.indexOf("MSIE") != -1);
+			var fileIndex = 0;
+
+			function addFile() {
+				var spanId = "filespan";
+				var fileId = "uploadfile" + (fileIndex++);
+				addInputFile(spanId, fileId);
+			}
+
+			function addInputFile(spanId, fileId) {
+				var span = document.getElementById(spanId);
+				if(span != null) {
+					var divObj = document.createElement("div"),
+						fileObj, delObj;
+					divObj.id = fileId;
+
+					if(isIE) {
+						fileObj = document.createElement("<input type=file onchange=changeFile(form)>");
+						delObj = document.createElement("<input type=button onclick=delInputFile('" + spanId + "','" + fileId + "')>");
+					} else {
+						fileObj = document.createElement("input");
+						fileObj.type = "file";
+						fileObj.setAttribute("onchange", "changeFile(form)", 0);
+						delObj = document.createElement("input");
+						delObj.type = "button";
+						delObj.setAttribute("onclick", "delInputFile('" + spanId + "','" + fileId + "')", 0);
+					}
+console.log(fileObj)
+					fileObj.name = fileId;
+					fileObj.size = "40";
+					fileObj.className = "input";
+					delObj.value = RES_BT_DELETE;
+					divObj.appendChild(fileObj);
+					divObj.appendChild(document.createTextNode(" "));
+					divObj.appendChild(delObj);
+					span.appendChild(divObj);
+				}
+			}
+
+			function delInputFile(spanId, fileId) {
+				var span = document.getElementById(spanId);
+				var divObj = document.getElementById(fileId);
+				if(span != null && divObj != null) {
+					span.removeChild(divObj);
+				}
+			}
+		</SCRIPT>
+		<META content="MSHTML 6.00.2800.1528" name='GENERATOR'>
+	</HEAD>
+
+	<body class="pagebackground">
+		<form id='form' action='XXX' method='post' encType='multipart/form-data'>
+			<table class='dialog1'>
+				<table>
+					<tr>
+						<td >通过文件上传: </td>
+						<td id='filespan'>
+							<input class='input' type='file' name='file'>
+							<input id='btnAdd' onclick='addFile()' type='button' value='添加'>
+						</td>
+					</tr>
+				</table>
+			</table>
+		</form>
+	</body>
+
+</HTML>
